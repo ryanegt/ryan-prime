@@ -1,6 +1,8 @@
 {
+  "id": "email_2024-08-17_scuba_weather_followup",
   "date": "2024-08-17T21:08:00",
   "source": "email",
+  "channel": "outbound",
   "topic": "scuba_scheduling",
   "tone": ["polite", "concise"],
   "summary": "Ryan acknowledging weather conditions preventing a dive trip.",

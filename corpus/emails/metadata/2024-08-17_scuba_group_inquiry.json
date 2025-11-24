@@ -1,9 +1,11 @@
 {
-  "date": "2024-08-17T20:02:00",
+  "id": "email_2024-08-17_scuba_jjdivers",
+  "date": "2024-08-17T20:02:00-04:00",
   "source": "email",
-  "topic": "scuba_scheduling",
+  "channel": "outbound",
+  "topic": ["scuba_scheduling"],
   "tone": ["polite", "logistical", "service_oriented"],
-  "summary": "Ryan asking a scuba operator about group availability for 4 discovery divers and 3 certified divers after last-minute changes.",
-  "context": "Inquiry for next-day availability for a mixed group of divers in USVI.",
+  "summary": "Ryan asking a scuba operator about next-day availability for a mixed group of divers.",
+  "context": "Inquiry for Sunday 8/18 availability in USVI for 4 discovery divers and 3 certified divers after last-minute plan changes.",
   "text": "Hey Jacob!\n\nI have a group on the island this weekend who had some plans change and were checking if you had availability tomorrow (Sunday 8/18) for 4 discovery divers and 3 certified divers. The certified divers can tag along with our discovery friends or go out if there’s a morning trip available during the intro work! Feel free to call or text me at (678) 477-4928 (or at this email) if you think that’s possible. Thanks for your time!\n\nRespectfully,\nRyan"
 }
