@@ -20,7 +20,7 @@
             "tone": ["candid", "matter_of_fact"],
             "summary": "Describe what a good day at work feels like.",
             "context": "Answer to a prompt about when YOU feel most like yourself during a workday.",
-            "text": "A good day is usually a productive day. Whether it's full of productive meetings or actual productive output, usually meaningful decisions have been made and the needle feels moved. Especially if, individually, I've been able to inform or influence the organization and have felt heard in the process."
+            "text": "A good day is usually a productive day. Whether it's full of productive meetings or actual productive output, usually meaningful decisions have been made and the needle feels moved. Especially if (individually) I've been able to inform or influence the organization and have felt heard in the process."
         },
         {
             "id": "core_2025-11-24_stress_pattern",

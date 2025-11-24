@@ -1,0 +1,1 @@
+The files and corpus content in this folder are generated directly through an introspective Q&A with a frontier model (GPT 5.1).
