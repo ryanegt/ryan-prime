@@ -1,0 +1,9 @@
+{
+  "date": "2024-08-17T21:08:00",
+  "source": "email",
+  "topic": "scuba_scheduling",
+  "tone": ["polite", "concise"],
+  "summary": "Ryan acknowledging weather conditions preventing a dive trip.",
+  "context": "Follow-up after operator reports unsafe water conditions.",
+  "text": "Thanks for getting back Jacob! Hope it clears up soon!\n\nRyan"
+}
