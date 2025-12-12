@@ -1,0 +1,1 @@
+The files and corpus content in this folder are sourced from emails I've sent through personal or professional channels.
