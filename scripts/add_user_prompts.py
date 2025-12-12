@@ -59,13 +59,13 @@ def generate_user_prompt(entry: JsonDict, file_path: Path) -> str:
     # If it's missing, prefer summary/context as a stand-in.
     if source == "personal_qa":
         if context:
-            return f"Answer in first person with Ryan's voice. Prompt: {context}"
+            return f"Answer in first person. Prompt: {context}"
         if topic_csv:
-            return f"Answer in first person with Ryan's voice about: {topic_csv}"
-        return "Answer in first person with Ryan's voice."
+            return f"Answer in first person about: {topic_csv}"
+        return "Answer in first person."
 
     if source == "email":
-        parts = ["Draft an email in Ryan's voice."]
+        parts = ["Draft an email."]
         if context:
             parts.append(f"Context: {context}")
         if topic_csv:
@@ -75,7 +75,7 @@ def generate_user_prompt(entry: JsonDict, file_path: Path) -> str:
         return " ".join(parts)
 
     if source == "instagram":
-        parts = ["Write an Instagram caption in Ryan's voice."]
+        parts = ["Write an Instagram caption."]
         if title and entry.get("title"):
             parts.append(f"Post title: {title}")
         if context:
@@ -89,9 +89,9 @@ def generate_user_prompt(entry: JsonDict, file_path: Path) -> str:
     if source == "blog":
         parts = []
         if entry.get("title"):
-            parts.append(f"Write a first-person blog post titled \"{entry['title']}\" in Ryan's voice.")
+            parts.append(f"Write a first-person blog post titled \"{entry['title']}\".")
         else:
-            parts.append("Write a first-person blog post in Ryan's voice.")
+            parts.append("Write a first-person blog post.")
         if context:
             parts.append(f"Context: {context}")
         if topic_csv:
@@ -103,9 +103,9 @@ def generate_user_prompt(entry: JsonDict, file_path: Path) -> str:
     if source == "whitepaper":
         parts = []
         if entry.get("title"):
-            parts.append(f"Write a technical memo/whitepaper section titled \"{entry['title']}\" in Ryan's voice.")
+            parts.append(f"Write a technical memo/whitepaper section titled \"{entry['title']}\".")
         else:
-            parts.append("Write a technical memo/whitepaper section in Ryan's voice.")
+            parts.append("Write a technical memo/whitepaper section.")
         if context:
             parts.append(f"Context: {context}")
         if topic_csv:
@@ -115,7 +115,7 @@ def generate_user_prompt(entry: JsonDict, file_path: Path) -> str:
         return " ".join(parts)
 
     # Fallback: infer from whatever we have.
-    parts = ["Write in Ryan's voice."]
+    parts = ["Write."]
     if title and entry.get("title"):
         parts.append(f"Title: {title}")
     if context:
