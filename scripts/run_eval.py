@@ -187,11 +187,6 @@ def main() -> int:
     parser.add_argument("--run-id", type=str, default=None, help="Override run id folder name")
     parser.add_argument("--dry-run", action="store_true", help="Do not call the API; just write files")
     parser.add_argument(
-        "--progress",
-        action="store_true",
-        help="Print progress after each API call (recommended for long runs).",
-    )
-    parser.add_argument(
         "--conf",
         type=str,
         default=".conf",
@@ -224,8 +219,11 @@ def main() -> int:
     if not model:
         raise SystemExit("Missing --model and no model found in .conf (expected key like 'ft-model').")
 
-    # Optional baseline can come from .conf too.
-    baseline = args.baseline or first_present(conf, ["baseline", "baseline_model"])
+    # Optional baseline can come from .conf too (used when --baseline isn't provided).
+    baseline = args.baseline or first_present(conf, ["baseline", "baseline_model", "base-model", "base_model", "base"])
+    # Avoid duplicating the primary model.
+    if baseline and baseline == model:
+        baseline = None
 
     run_id = args.run_id or utc_run_id("eval")
     run_dir = runs_root / run_id
@@ -291,21 +289,21 @@ def main() -> int:
             records.append(rec)
             out_lines.append(json.dumps(rec, ensure_ascii=False))
 
-            if args.progress:
-                elapsed = time.time() - t_start
-                rate = elapsed / completed_calls if completed_calls else 0.0
-                remaining = max(0, total_calls - completed_calls)
-                eta = rate * remaining
-                tok = ""
-                if isinstance(r.usage, dict) and r.usage.get("total_tokens") is not None:
-                    tok = f", tokens={r.usage.get('total_tokens')}"
-                eval_id = str(item.get("id") or "")
-                bucket = str(item.get("bucket") or "")
-                print(
-                    f"[{completed_calls}/{total_calls}] {bucket}/{eval_id} :: {model} "
-                    f"(latency={fmt_seconds(r.latency_s)}{tok}, elapsed={fmt_seconds(elapsed)}, eta={fmt_seconds(eta)})",
-                    flush=True,
-                )
+            # Progress output (default): print after each call so long runs are observable.
+            elapsed = time.time() - t_start
+            rate = elapsed / completed_calls if completed_calls else 0.0
+            remaining = max(0, total_calls - completed_calls)
+            eta = rate * remaining
+            tok = ""
+            if isinstance(r.usage, dict) and r.usage.get("total_tokens") is not None:
+                tok = f", tokens={r.usage.get('total_tokens')}"
+            eval_id = str(item.get("id") or "")
+            bucket = str(item.get("bucket") or "")
+            print(
+                f"[{completed_calls}/{total_calls}] {bucket}/{eval_id} :: {model} "
+                f"(latency={fmt_seconds(r.latency_s)}{tok}, elapsed={fmt_seconds(elapsed)}, eta={fmt_seconds(eta)})",
+                flush=True,
+            )
 
     run_dir.joinpath("results.jsonl").write_text("\n".join(out_lines) + ("\n" if out_lines else ""), encoding="utf-8")
     write_summary_md(run_dir, config, records)

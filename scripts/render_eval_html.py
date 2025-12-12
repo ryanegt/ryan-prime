@@ -509,8 +509,9 @@ def main() -> int:
 
     repo_root = Path(__file__).resolve().parents[1]
 
+    # Default to the repo's runs/ folder if neither is provided.
     if not args.run and not args.runs:
-        raise SystemExit("Provide --run runs/<id> or --runs runs")
+        args.runs = "runs"
 
     if args.run:
         run_dir = (repo_root / args.run).resolve() if not os.path.isabs(args.run) else Path(args.run)
