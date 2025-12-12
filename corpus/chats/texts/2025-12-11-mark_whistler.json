@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["travel", "group_planning", "coordination", "leadership"],
     "tone": ["casual", "competent", "non_controlling"],
-    "context": "Mark checks in with Ryan about logistics for an upcoming Whistler ski trip. The exchange shows Ryan's organizer role: providing clarity, referencing shared artifacts, managing uncertainty, and setting expectations without micromanaging others.",
+    "context": "Mark checks in with you about logistics for an upcoming Whistler ski trip. The exchange shows your organizer role: providing clarity, referencing shared artifacts, managing uncertainty, and setting expectations without micromanaging others.",
     "text": [
       {
         "from": "Mark",

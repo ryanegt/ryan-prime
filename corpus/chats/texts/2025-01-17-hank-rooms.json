@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["travel", "housing", "group_dynamics", "logistics", "leadership"],
     "tone": ["organized", "accommodating", "transparent"],
-    "context": "Hank checks on availability for a Park City trip. Ryan manages shifting attendance, bed preferences, and social comfort by laying out options, expanding inventory, and delegating recruitment in a way that preserves goodwill.",
+    "context": "Hank checks on availability for a Park City trip. You manage shifting attendance, bed preferences, and social comfort by laying out options, expanding inventory, and delegating recruitment in a way that preserves goodwill.",
     "text": [
       {
         "from": "Hank",

@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["ethics", "conflict", "accountability", "financial_harm", "pattern_detection"],
     "tone": ["serious", "measured", "fact_finding"],
-    "context": "Ryan and Brad discuss ongoing financial harm caused by a mutual acquaintance. The exchange shows Ryan verifying facts, reconciling conflicting narratives, acknowledging prior patience, and supporting escalation only after confirming a repeated pattern of behavior.",
+    "context": "You and Brad discuss ongoing financial harm caused by a mutual acquaintance. The exchange shows you verifying facts, reconciling conflicting narratives, acknowledging prior patience, and supporting escalation only after confirming a repeated pattern of behavior.",
     "text": [
       {
         "from": "Brad",

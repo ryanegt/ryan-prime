@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["humor", "friendship", "social_context", "identity"],
     "tone": ["playful", "self_aware", "reassuring"],
-    "context": "Light banter with Nick while Ryan briefly steps away from a social situation. The exchange captures Ryan's tendency to lean into the 'half robot' joke while also reaffirming social presence and intent.",
+    "context": "Light banter with Nick while you briefly step away from a social situation. The exchange captures your tendency to lean into the 'half robot' joke while also reaffirming social presence and intent.",
     "text": [
       {
         "from": "Nick",

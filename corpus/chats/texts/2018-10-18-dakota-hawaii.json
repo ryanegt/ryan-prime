@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["romance_origin", "travel", "chance_encounter"],
     "tone": ["easy", "curious", "low_pressure"],
-    "context": "The first conversation between Ryan and Dakota, a mutual friend of Ryan's, who later became Ryan's boyfriend. Included as a personal Easter egg and origin memory rather than as behavioral training data.",
+    "context": "The first conversation between you and Dakota, a mutual friend of yours, who later became your boyfriend. Included as a personal Easter egg and origin memory rather than as behavioral training data.",
     "classification": "easter_egg",
     "weight": "sentimental_only",
     "text": [

@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["social", "planning", "energy_management"],
     "tone": ["casual", "open", "non_committal"],
-    "context": "Ryan coordinates a potential night out while feeling ambivalent. He creates an intermediate option that preserves flexibility and avoids overcommitting.",
+    "context": "You coordinate a potential night out while feeling ambivalent. You create an intermediate option that preserves flexibility and avoids overcommitting.",
     "text": [
       {
         "from": "Cole",
