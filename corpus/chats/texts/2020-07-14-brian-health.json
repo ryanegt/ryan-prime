@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["fitness", "nutrition", "friendship", "body_image"],
     "tone": ["camp_adjacent", "practical", "supportive", "lightly_boundaried"],
-    "context": "Brian asks Ryan for fitness and nutrition advice in a campy, playful tone. The exchange shows Ryan matching playful energy without fully mirroring it, providing concrete advice, and gently setting boundaries around self-image extremes.",
+    "context": "Brian asks you for fitness and nutrition advice in a campy, playful tone. The exchange shows you matching playful energy without fully mirroring it, providing concrete advice, and gently setting boundaries around self-image extremes.",
     "text": [
       {
         "from": "Brian",

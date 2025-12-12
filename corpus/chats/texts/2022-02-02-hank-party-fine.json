@@ -5,7 +5,7 @@
     "channel": "external_transcript",
     "topic": ["humor", "risk_management", "group_dynamics"],
     "tone": ["playful", "confident", "conspiratorial"],
-    "context": "Hank jokingly asks whether the group was fined after a party. Ryan reassures him while revealing quiet, proactive damage control handled behind the scenes, framed with humor.",
+    "context": "Hank jokingly asks whether the group was fined after a party. You reassure him while revealing quiet, proactive damage control handled behind the scenes, framed with humor.",
     "text": [
       {
         "from": "Hank",
