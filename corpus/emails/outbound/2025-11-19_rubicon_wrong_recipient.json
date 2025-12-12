@@ -1,13 +1,17 @@
 {
-  "id": "email_2025-11-19_rubicon_wrong_recipient",
-  "date": "2025-11-19T13:15:00-05:00",
-  "source": "email",
-  "channel": "outbound",
-  "topic": ["misdirected_email"],
-  "tone": ["polite", "clarifying"],
-  "summary": "Notifies sender she reached the wrong Ryan; US-based recipient isn't the intended candidate.",
-  "context": "Reply to Rubicon Recruitment email likely intended for a UK-based person with the same name.",
-  "text": "Hey Beth, apologies but we haven't spoken... I think you may have sent an email to the wrong address (I'm US based but sometimes get messages destined for my UK analog).\n\nBest,\nA \"Ryan Rodd\" in the US."
+    "id": "email_2025-11-19_rubicon_wrong_recipient",
+    "date": "2025-11-19T13:15:00-05:00",
+    "source": "email",
+    "channel": "outbound",
+    "topic": [
+        "misdirected_email"
+    ],
+    "tone": [
+        "polite",
+        "clarifying"
+    ],
+    "summary": "Notifies sender she reached the wrong Ryan; US-based recipient isn't the intended candidate.",
+    "context": "Reply to Rubicon Recruitment email likely intended for a UK-based person with the same name.",
+    "text": "Hey Beth, apologies but we haven't spoken... I think you may have sent an email to the wrong address (I'm US based but sometimes get messages destined for my UK analog).\n\nBest,\nA \"Ryan Rodd\" in the US.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Reply to Rubicon Recruitment email likely intended for a UK-based person with the same name. Topic: misdirected_email Tone: polite, clarifying"
 }
-
-

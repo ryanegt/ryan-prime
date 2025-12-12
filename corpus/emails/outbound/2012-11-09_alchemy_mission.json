@@ -2,14 +2,20 @@
     "date": "2021-11-09",
     "source": "email",
     "topics": [
-      "mission statement",
-      "creative writing",
-      "brand narrative",
-      "thematic framing",
-      "concept development"
+        "mission statement",
+        "creative writing",
+        "brand narrative",
+        "thematic framing",
+        "concept development"
     ],
     "context": "Drafting a thematic mission statement for a venue concept, combining philosophical tone with creative and technological motifs.",
-    "tone": ["inspirational", "philosophical", "poetic", "vision-driven"],
+    "tone": [
+        "inspirational",
+        "philosophical",
+        "poetic",
+        "vision-driven"
+    ],
     "content": "During a time when philosophers were beginning to understand the miracles of the natural world, alchemists sought to reshape that understanding into miracles of their own, searching for extraordinary new ways to transform the human experience.\n\nAt Alchemy we continue the pursuit of a transformative experience. Through the creativity of performance, the artistry of light and sound, the finesse of taste, and the mastery of emerging technology, we hope to awaken the creative magic in us all.\n\nWelcome to Alchemy, and join us in becoming the alchemists of your own world.",
-    "reason_for_inclusion": "Captures Ryan's visionary writing style, blending philosophical context with modern creative-technological themes. Demonstrates his ability to create immersive conceptual framing for experiential projects."
-  }
+    "reason_for_inclusion": "Captures Ryan's visionary writing style, blending philosophical context with modern creative-technological themes. Demonstrates his ability to create immersive conceptual framing for experiential projects.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Drafting a thematic mission statement for a venue concept, combining philosophical tone with creative and technological motifs. Topic: mission statement, creative writing, brand narrative, thematic framing, concept development Tone: inspirational, philosophical, poetic, vision-driven"
+}

@@ -3,7 +3,13 @@
     "source": "email",
     "topic": "professional introduction and project explanation",
     "context": "Replying to a collaborator requesting project details about a new creative/production space.",
-    "tone": ["professional", "helpful", "concise", "technical-lite"],
+    "tone": [
+        "professional",
+        "helpful",
+        "concise",
+        "technical-lite"
+    ],
     "content": "Hi Isabela, thank you for reaching out.\n\nI am an owner and representative of a company that was incorporated only recently, with plans to open in roughly a year. By day I am a software engineer, and for the company I serve as a software and production engineer responsible for technological decisions and prototyping new lighting effects and installations. For design and artistic direction, I rely on two colleagues who lead development in those areas.\n\nThe project is a 22,000 sqft warehouse that we have recently purchased. We are waiting for the current tenants to vacate so that interior design can begin. The goal is to have the project completed by mid-September next year. I hope this presents more opportunities than challenges as we move forward. I’ve included an image of the current interior. The address is provided for context.\n\nFor the tree installation, we are preparing a description document with initial detail to help estimate scope, time, and budget. Please feel free to reach out with any additional questions.\n\nVery respectfully,\nRyan",
-    "reason_for_inclusion": "Demonstrates formal professional voice, clear explanation of responsibilities, and structured communication of project details."
+    "reason_for_inclusion": "Demonstrates formal professional voice, clear explanation of responsibilities, and structured communication of project details.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Replying to a collaborator requesting project details about a new creative/production space. Topic: professional introduction and project explanation Tone: professional, helpful, concise, technical-lite"
 }

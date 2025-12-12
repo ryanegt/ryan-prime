@@ -3,8 +3,14 @@
     "source": "email",
     "topic": "CDN infrastructure planning, colocation pricing inquiry, early sales discovery",
     "context": "Responding to a colocation provider's sales outreach while gathering early feasibility and cost estimates for a multi-region CDN deployment.",
-    "tone": ["professional", "informal", "technical", "transparent", "apologetic-but-efficient"],
+    "tone": [
+        "professional",
+        "informal",
+        "technical",
+        "transparent",
+        "apologetic-but-efficient"
+    ],
     "content": "Hey Brad,\n\nThanks for reaching out, and apologies for the radio silence. You're correct in assuming I've been completely oversubscribed since submitting the initial inquiry.\n\nAt this point, I don't have all the answers yet. The intent of this early discovery round is to collect ballpark estimates for colocation and build a roadmap that minimizes cost of entry without sacrificing future growth and scale. Cost is the main driver in determining which locales we enter first, and initial capability is still a moving target. I'm interested in anything from a quarter rack with 10 Gbps of bandwidth to a full rack with 100 Gbps depending on circumstances. Geographically, the rough deployment order would be: central US, eastern US, western US, central EU, central/south America, and finally Asia Pacific.\n\nWhile we could build out a rack with just power and cross-connect access, if there's an opportunity to leverage existing network, firewall, or IPMI infrastructure, that would definitely be of interest. Right now our infrastructure is a patchwork of dedicated servers plus a couple of custom ProLiant servers running in the basement.\n\nSince most colocation companies don’t advertise pricing, I've been loosely basing models on information from Voxility. If there's a way to get some ballpark numbers from your side—especially around where bandwidth is most cost-effective—it would really help me build the narrative internally enough to move toward a meaningful purchasing conversation.\n\nI hope that makes sense, and thanks so much for your time.\n\nRyan",
-    "reason_for_inclusion": "Captures Ryan's business-technical communication style, ability to explain infrastructure needs with clarity, forward-looking planning mindset, mild self-deprecation, and collaborative tone when interacting with vendors."
-  }
-  
+    "reason_for_inclusion": "Captures Ryan's business-technical communication style, ability to explain infrastructure needs with clarity, forward-looking planning mindset, mild self-deprecation, and collaborative tone when interacting with vendors.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Responding to a colocation provider's sales outreach while gathering early feasibility and cost estimates for a multi-region CDN deployment. Topic: CDN infrastructure planning, colocation pricing inquiry, early sales discovery Tone: professional, informal, technical, transparent, apologetic-but-efficient"
+}

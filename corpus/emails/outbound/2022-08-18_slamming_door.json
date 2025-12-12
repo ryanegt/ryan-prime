@@ -1,9 +1,21 @@
 {
     "date": "2022-08-18",
     "source": "email",
-    "topics": ["conflict resolution", "neighbor relations", "noise mitigation", "collaborative communication"],
+    "topics": [
+        "conflict resolution",
+        "neighbor relations",
+        "noise mitigation",
+        "collaborative communication"
+    ],
     "context": "Responding to a neighbor who raised concerns about noise from a shared doorway and possible sound travel from the downstairs unit.",
-    "tone": ["friendly", "apologetic", "collaborative", "solution-oriented", "low-conflict"],
+    "tone": [
+        "friendly",
+        "apologetic",
+        "collaborative",
+        "solution-oriented",
+        "low-conflict"
+    ],
     "content": "Hey Greg,\n\nThanks for letting us know, and sorry for the delay in responding — just been catching up after being away for the last week or two.\n\nI totally agree the door downstairs shuts really loudly. I'm going to look into insulated stripping and a closing arm this weekend to keep it from slamming. If there's additional noise coming from traffic or our unit downstairs, we'll keep identifying soundproofing options as well.\n\nThanks for reaching out and keeping it between the units — happy to work with you to be better neighbors. :)\n\nBest,\nRyan",
-    "reason_for_inclusion": "Captures Ryan's conflict-resolution style, friendly tone, constructive accountability, and tendency to acknowledge issues while proposing practical steps toward a solution."
+    "reason_for_inclusion": "Captures Ryan's conflict-resolution style, friendly tone, constructive accountability, and tendency to acknowledge issues while proposing practical steps toward a solution.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Responding to a neighbor who raised concerns about noise from a shared doorway and possible sound travel from the downstairs unit. Topic: conflict resolution, neighbor relations, noise mitigation, collaborative communication Tone: friendly, apologetic, collaborative, solution-oriented, low-conflict"
 }

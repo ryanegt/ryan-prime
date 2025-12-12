@@ -3,7 +3,14 @@
     "source": "email",
     "topic": "creative collaboration update, long-delay project management, installation design",
     "context": "Responding to an artist collaborator after long project delays, sharing updated timelines and opportunities while keeping engagement warm and constructive.",
-    "tone": ["warm", "apologetic-but-upbeat", "transparent", "collaborative", "vision-driven"],
+    "tone": [
+        "warm",
+        "apologetic-but-upbeat",
+        "transparent",
+        "collaborative",
+        "vision-driven"
+    ],
     "content": "Hey Jordan,\n\nSorry for the delayed response, and thanks for continuing to reach out and stay on standby. A lot of the delay getting back to you has been from assessing the state of things and trying to estimate timelines across a dozen moving targets. With that in mind, here are the latest developments. The good news is we are still in the process of acquiring the space, and the project is still expected to happen.\n\nIn addition to the primary club, our investor is closing sooner on a bar space near Piedmont Park that previously housed a restaurant. While we wait for the legal circus around the larger project to resolve, we're planning and designing that bar in parallel. While the two spaces aren't related, there will be shared design cues, including a smaller “sapling\" version of the tree of life. If you'd be interested in cutting your teeth on a smaller version, we're planning to draft a similar requirements doc for it.\n\nThe bar/restaurant will close in the next week or two, while the primary project is probably closer to the middle of August now. I know we still owe you feedback on your latest tree revision. If you could generate an STL or similar file that I could send to the 3D printer, that would be great. It's close enough that we're reaching the stage where we should start talking about textures and details.\n\nOn another note, I've been sinking my spare time into leaves — check out the attached video.\n\nThanks again for staying tuned. Expect more updates as things move forward, and let us know if you have any questions or want to jump on a call.\n\nBest,\nRyan",
-    "reason_for_inclusion": "Captures Ryan’s style when managing long-delay creative projects: honest about uncertainty, appreciative of collaborators, communicates progress with nuance, provides clear next steps, and maintains enthusiasm while acknowledging constraints."
+    "reason_for_inclusion": "Captures Ryan’s style when managing long-delay creative projects: honest about uncertainty, appreciative of collaborators, communicates progress with nuance, provides clear next steps, and maintains enthusiasm while acknowledging constraints.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Responding to an artist collaborator after long project delays, sharing updated timelines and opportunities while keeping engagement warm and constructive. Topic: creative collaboration update, long-delay project management, installation design Tone: warm, apologetic-but-upbeat, transparent, collaborative, vision-driven"
 }

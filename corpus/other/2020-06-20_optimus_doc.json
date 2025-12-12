@@ -5,228 +5,291 @@
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "flight scheduling",
-              "aviation operations",
-              "optimization overview",
-              "cost minimization",
-              "resource utilization"
+                "flight scheduling",
+                "aviation operations",
+                "optimization overview",
+                "cost minimization",
+                "resource utilization"
             ],
             "context": "High-level introduction to the Optimus algorithm and the operational goals of on-demand air taxi scheduling.",
-            "tone": ["technical", "explanatory", "formal"],
+            "tone": [
+                "technical",
+                "explanatory",
+                "formal"
+            ],
             "content": "The creation and optimization of on-demand flight schedules is critical to the sustainment and growth of ImagineAir, especially as scaling the operation increases the complexity of scheduling exponentially. The primary goal of efficient scheduling is to minimize the number of dead (empty) legs and the number of aircraft used for a given set of paid reservations. This yields more efficient use of pilots, higher aircraft availability, decreased operations personnel burden, minimized gross operating cost, and improved predictive pricing and revenue yield.",
-            "reason_for_inclusion": "Captures Ryan's high-level systems framing, cost-awareness, and articulation of operational goals in an aviation business context."
+            "reason_for_inclusion": "Captures Ryan's high-level systems framing, cost-awareness, and articulation of operational goals in an aviation business context.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Mission and Overview\" in Ryan's voice. Context: High-level introduction to the Optimus algorithm and the operational goals of on-demand air taxi scheduling. Topics: flight scheduling, aviation operations, optimization overview, cost minimization, resource utilization Tone: technical, explanatory, formal"
         },
         {
             "title": "Optimus — Background and Complexity",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "np-hard problems",
-              "traveling salesman",
-              "aviation scheduling",
-              "complexity science",
-              "algorithm constraints"
+                "np-hard problems",
+                "traveling salesman",
+                "aviation scheduling",
+                "complexity science",
+                "algorithm constraints"
             ],
             "context": "Explaining the computational difficulty and domain-specific constraints of flight scheduling and automation.",
-            "tone": ["technical", "analytical"],
+            "tone": [
+                "technical",
+                "analytical"
+            ],
             "content": "Flight scheduling is not intuitive, nor is developing automation that performs it. The optimization described here is NP-hard, with traveling-salesman logic forming a core component of the solution. Unlike traditional TSP or vehicle-routing problems, this domain requires solving multiple differently constrained paths simultaneously and is constrained both spatially and temporally.",
-            "reason_for_inclusion": "Shows Ryan's ability to introduce computer science complexity concepts and relate them to real-world aviation problems."
+            "reason_for_inclusion": "Shows Ryan's ability to introduce computer science complexity concepts and relate them to real-world aviation problems.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Background and Complexity\" in Ryan's voice. Context: Explaining the computational difficulty and domain-specific constraints of flight scheduling and automation. Topics: np-hard problems, traveling salesman, aviation scheduling, complexity science, algorithm constraints Tone: technical, analytical"
         },
         {
             "title": "Optimus — Formal Problem Definition",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "directed acyclic graph",
-              "euler paths",
-              "greedy algorithms",
-              "optimization definition"
+                "directed acyclic graph",
+                "euler paths",
+                "greedy algorithms",
+                "optimization definition"
             ],
             "context": "Compact mathematical formulation of the optimization problem underlying revenue flight scheduling.",
-            "tone": ["technical", "concise", "formal"],
+            "tone": [
+                "technical",
+                "concise",
+                "formal"
+            ],
             "content": "Greedy optimization of a directed, acyclic network graph, using one or multiple discrete Euler paths.",
-            "reason_for_inclusion": "Captures Ryan's ability to reduce a complex operational problem into a formal computational definition."
+            "reason_for_inclusion": "Captures Ryan's ability to reduce a complex operational problem into a formal computational definition.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Formal Problem Definition\" in Ryan's voice. Context: Compact mathematical formulation of the optimization problem underlying revenue flight scheduling. Topics: directed acyclic graph, euler paths, greedy algorithms, optimization definition Tone: technical, concise, formal"
         },
         {
             "title": "Optimus — Core Cost Functions",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "cost optimization",
-              "aviation utilization",
-              "efficiency metrics",
-              "resource management"
+                "cost optimization",
+                "aviation utilization",
+                "efficiency metrics",
+                "resource management"
             ],
             "context": "Description of the primary cost functions used to evaluate and rank candidate schedules.",
-            "tone": ["technical", "explanatory"],
+            "tone": [
+                "technical",
+                "explanatory"
+            ],
             "content": "The optimal solution minimizes total cost based on several cost functions: (1) Flight path minimization: cost decreases with reduced dead-leg utilization. Flight path efficiency is E = revenue distance / (revenue distance + empty distance). (2) Aircraft usage optimization: minimizing the number of aircraft and pilots used reduces cost, though adding an additional aircraft paths may improve total schedule efficiency. (3) Flight time minimization: reducing aircraft and pilot utilization increases future availability; this is the lowest-priority optimization goal.",
-            "reason_for_inclusion": "Shows how Ryan decomposes operational cost into quantitative components and balances competing priorities."
+            "reason_for_inclusion": "Shows how Ryan decomposes operational cost into quantitative components and balances competing priorities.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Core Cost Functions\" in Ryan's voice. Context: Description of the primary cost functions used to evaluate and rank candidate schedules. Topics: cost optimization, aviation utilization, efficiency metrics, resource management Tone: technical, explanatory"
         },
         {
             "title": "Optimus — FAA and Operational Constraints",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "faa regulations",
-              "pilot duty rules",
-              "aircraft constraints",
-              "operational limits",
-              "aviation compliance"
+                "faa regulations",
+                "pilot duty rules",
+                "aircraft constraints",
+                "operational limits",
+                "aviation compliance"
             ],
             "context": "Detailed description of regulatory and logistical constraints that make optimization complex.",
-            "tone": ["technical", "explanatory", "aviation-domain"],
+            "tone": [
+                "technical",
+                "explanatory",
+                "aviation-domain"
+            ],
             "content": "While the theoretical science behind optimization is straightforward, the constraining parameters make this a uniquely difficult problem. Key constraints stem from FAA regulations governing pilot and aircraft usage. Pilots may not fly more than 8 airborne hours in any 24-hour window, and each Euler path must respect this limit. Pilots must also receive 10 hours of rest in the last 24 hours, limiting total duty time to roughly 14 hours. A fixed number of aircraft and pilots are available; each originates from different nodes. Unless overnighting cost is included, aircraft must return to originating nodes. If overnighting is allowed, pilots cannot exceed three consecutive overnights. Aircraft utilization is also constrained by maintenance timers. If a pilot exceeded limits on a prior assignment, compensatory rest must be accounted for. Locked schedules created by humans must also be respected.",
-            "reason_for_inclusion": "Captures Ryan’s deep operational understanding of FAA constraints and how they shape algorithmic feasibility."
+            "reason_for_inclusion": "Captures Ryan’s deep operational understanding of FAA constraints and how they shape algorithmic feasibility.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — FAA and Operational Constraints\" in Ryan's voice. Context: Detailed description of regulatory and logistical constraints that make optimization complex. Topics: faa regulations, pilot duty rules, aircraft constraints, operational limits, aviation compliance Tone: technical, explanatory, aviation-domain"
         },
         {
             "title": "Optimus — Revenue Yield Goal",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "revenue yield",
-              "pricing optimization",
-              "fast heuristics",
-              "air taxi economics"
+                "revenue yield",
+                "pricing optimization",
+                "fast heuristics",
+                "air taxi economics"
             ],
             "context": "Explains the 'fast mode' of the Optimus algorithm designed for real-time pricing.",
-            "tone": ["technical", "concise"],
+            "tone": [
+                "technical",
+                "concise"
+            ],
             "content": "Revenue yield optimization is the fast and simplified mode of Optimus. It sacrifices optimal schedule efficiency in favor of fast computation and returns the minimum number of aircraft required to satisfy the schedule on the day of a flight request. This mode runs for every flight request or pricing event. It also predicts efficient future schedules so the revenue system can offer incentives. However, this goal does not belong in the core routing logic and should remain separate.",
-            "reason_for_inclusion": "Shows Ryan’s ability to distinguish between computationally optimal and economically optimal strategies in aviation scheduling."
+            "reason_for_inclusion": "Shows Ryan’s ability to distinguish between computationally optimal and economically optimal strategies in aviation scheduling.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Revenue Yield Goal\" in Ryan's voice. Context: Explains the 'fast mode' of the Optimus algorithm designed for real-time pricing. Topics: revenue yield, pricing optimization, fast heuristics, air taxi economics Tone: technical, concise"
         },
         {
             "title": "Optimus — Operational Routing Goal",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "operational routing",
-              "legal constraints",
-              "full optimization",
-              "aviation scheduling"
+                "operational routing",
+                "legal constraints",
+                "full optimization",
+                "aviation scheduling"
             ],
             "context": "Describes the 'slow mode' or full routing optimization used for legal, operational schedules.",
-            "tone": ["technical", "methodical"],
+            "tone": [
+                "technical",
+                "methodical"
+            ],
             "content": "Operational routing optimization produces the final, legal, and elegant flight schedule. It must consider all constraints and may require multiple algorithmic methods to reach a high-quality solution. It runs with longer compute time. These schedules are used by operations and can inform the revenue yield system. The ideal unified system would combine both speed and completeness into one algorithm.",
-            "reason_for_inclusion": "Represents Ryan’s architecture mindset around separating responsibilities between real-time pricing and full operational planning."
+            "reason_for_inclusion": "Represents Ryan’s architecture mindset around separating responsibilities between real-time pricing and full operational planning.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Operational Routing Goal\" in Ryan's voice. Context: Describes the 'slow mode' or full routing optimization used for legal, operational schedules. Topics: operational routing, legal constraints, full optimization, aviation scheduling Tone: technical, methodical"
         },
         {
             "title": "Optimus — Required Inputs",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "scheduler inputs",
-              "resource constraints",
-              "aviation operations",
-              "flight data modeling"
+                "scheduler inputs",
+                "resource constraints",
+                "aviation operations",
+                "flight data modeling"
             ],
             "context": "List of inputs required for running any scheduling optimization or recomputation.",
-            "tone": ["technical", "structured"],
+            "tone": [
+                "technical",
+                "structured"
+            ],
             "content": "Before building a schedule, Optimus must understand its resources. Inputs may change per request, whenever a flight is booked, or when resources shift. Inputs include: the flight schedule, including potential requests and locked sets; origin, destination, departure time, standard fare, and fare paid for each flight; number of aircraft; remaining maintenance time for each aircraft; aircraft and pilot locations; pilot availability and training qualifications; and remaining duty time for each pilot.",
-            "reason_for_inclusion": "Demonstrates Ryan’s systems engineering clarity in enumerating inputs for a complex algorithm."
+            "reason_for_inclusion": "Demonstrates Ryan’s systems engineering clarity in enumerating inputs for a complex algorithm.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Required Inputs\" in Ryan's voice. Context: List of inputs required for running any scheduling optimization or recomputation. Topics: scheduler inputs, resource constraints, aviation operations, flight data modeling Tone: technical, structured"
         },
         {
             "title": "Optimus — Regionality and Scalability Issues",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "regional optimization",
-              "scalability",
-              "air taxi operations",
-              "graph culling"
+                "regional optimization",
+                "scalability",
+                "air taxi operations",
+                "graph culling"
             ],
             "context": "Explains how limiting optimization to operational regions reduces computation but harms scalability.",
-            "tone": ["analytical", "technical"],
+            "tone": [
+                "analytical",
+                "technical"
+            ],
             "content": "ImagineAir operates across multiple distinct regions, which both reduces computational inputs and simplifies outputs. However, this regional culling is not scalable. As more flights straddle region boundaries, results degrade and inefficiency appears. A nationwide operation will require abandoning region-culling entirely.",
-            "reason_for_inclusion": "Shows Ryan’s understanding of the trade-offs between computational tractability and systemic scalability."
+            "reason_for_inclusion": "Shows Ryan’s understanding of the trade-offs between computational tractability and systemic scalability.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Regionality and Scalability Issues\" in Ryan's voice. Context: Explains how limiting optimization to operational regions reduces computation but harms scalability. Topics: regional optimization, scalability, air taxi operations, graph culling Tone: analytical, technical"
         },
         {
             "title": "Optimus — Current Approach and Legacy Heuristic",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "heuristics",
-              "graph algorithms",
-              "adjacency matrices",
-              "dead leg minimization"
+                "heuristics",
+                "graph algorithms",
+                "adjacency matrices",
+                "dead leg minimization"
             ],
             "context": "Description of the long-standing heuristic used since 2013 to construct schedules.",
-            "tone": ["technical", "procedural"],
+            "tone": [
+                "technical",
+                "procedural"
+            ],
             "content": "Since 2013, the current heuristic has performed well with up to ~20 aircraft but may break down beyond 25 aircraft or 30–40 daily revenue flights. It constructs an adjacency matrix of all possible dead legs, computes cost functions for each, removes impossible options, and sorts pairings. Schedule building proceeds by selecting the lowest-cost dead leg, eliminating pairings involving satisfied flights, selecting the nearest available aircraft, and checking flight and duty legality. If legal, the pairing is added; if not, a new schedule is created. This repeats until all flights are paired. Eliminated low-cost pairings may yield better schedules if reconsidered, suggesting the need to re-run optimization with alternate starting conditions.",
-            "reason_for_inclusion": "Captures Ryan’s ability to translate complex heuristics into clear procedural steps."
+            "reason_for_inclusion": "Captures Ryan’s ability to translate complex heuristics into clear procedural steps.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Current Approach and Legacy Heuristic\" in Ryan's voice. Context: Description of the long-standing heuristic used since 2013 to construct schedules. Topics: heuristics, graph algorithms, adjacency matrices, dead leg minimization Tone: technical, procedural"
         },
         {
             "title": "Optimus — Machine Learning Opportunities",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "machine learning",
-              "pattern recognition",
-              "schedule optimization",
-              "aviation data science"
+                "machine learning",
+                "pattern recognition",
+                "schedule optimization",
+                "aviation data science"
             ],
             "context": "Explores the potential for ML to choose advantageous initial pairings in the optimizer.",
-            "tone": ["technical", "speculative"],
+            "tone": [
+                "technical",
+                "speculative"
+            ],
             "content": "Patterns in allowed pairings and initial selections may reveal opportunities for machine learning. By analyzing which past patterns yield legal and efficient schedules, a model could predict promising initial pairings for new schedules.",
-            "reason_for_inclusion": "Demonstrates Ryan’s instinct to identify ML leverage points inside deterministic heuristics."
+            "reason_for_inclusion": "Demonstrates Ryan’s instinct to identify ML leverage points inside deterministic heuristics.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Machine Learning Opportunities\" in Ryan's voice. Context: Explores the potential for ML to choose advantageous initial pairings in the optimizer. Topics: machine learning, pattern recognition, schedule optimization, aviation data science Tone: technical, speculative"
         },
         {
             "title": "Optimus — Result Stack and Operational Flexibility",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "schedule proposals",
-              "operational flexibility",
-              "ranking algorithms",
-              "aviation ops"
+                "schedule proposals",
+                "operational flexibility",
+                "ranking algorithms",
+                "aviation ops"
             ],
             "context": "Explains why generating multiple schedules is more useful than producing a single optimal answer.",
-            "tone": ["technical", "operational"],
+            "tone": [
+                "technical",
+                "operational"
+            ],
             "content": "The optimizer should output a stack of proposed schedules, each satisfying all reserved flights, along with pilot assignments. The stack is sorted by efficiency with secondary consideration of cost. Providing multiple proposals gives operations personnel flexibility when dealing with last-minute changes or pilot preferences.",
-            "reason_for_inclusion": "Shows Ryan’s philosophy that algorithms should support human decision-making rather than replace it."
+            "reason_for_inclusion": "Shows Ryan’s philosophy that algorithms should support human decision-making rather than replace it.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Result Stack and Operational Flexibility\" in Ryan's voice. Context: Explains why generating multiple schedules is more useful than producing a single optimal answer. Topics: schedule proposals, operational flexibility, ranking algorithms, aviation ops Tone: technical, operational"
         },
         {
             "title": "Optimus — Locking and Blocking Concepts",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "schedule locking",
-              "block scheduling",
-              "optimizer constraints",
-              "human-in-the-loop design"
+                "schedule locking",
+                "block scheduling",
+                "optimizer constraints",
+                "human-in-the-loop design"
             ],
             "context": "Describes soft vs hard locks and the block-based abstraction used during optimization.",
-            "tone": ["technical", "explanatory"],
+            "tone": [
+                "technical",
+                "explanatory"
+            ],
             "content": "Schedule locks reduce input complexity. Soft locks represent human-curated pairings not respected by the optimizer when pricing. Hard locks cannot be broken and are read as single flights. The optimizer shuffles blocks, not flights: blocks contain flights, may extend to include ground time, and every flight must be in exactly one block. This simplifies optimization and supports both operational constraints and human oversight.",
-            "reason_for_inclusion": "Captures Ryan’s blend of human-in-the-loop philosophy and algorithmic abstraction design."
+            "reason_for_inclusion": "Captures Ryan’s blend of human-in-the-loop philosophy and algorithmic abstraction design.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Locking and Blocking Concepts\" in Ryan's voice. Context: Describes soft vs hard locks and the block-based abstraction used during optimization. Topics: schedule locking, block scheduling, optimizer constraints, human-in-the-loop design Tone: technical, explanatory"
         },
         {
             "title": "Optimus — Single-Day vs Multi-Day Optimization",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "multi-day scheduling",
-              "overnight detection",
-              "operational constraints",
-              "algorithm design"
+                "multi-day scheduling",
+                "overnight detection",
+                "operational constraints",
+                "algorithm design"
             ],
             "context": "Explains limitations of the single-day assumption and requirements for spanning multi-day scheduling.",
-            "tone": ["technical", "analytical"],
+            "tone": [
+                "technical",
+                "analytical"
+            ],
             "content": "Optimus currently assumes aircraft and pilots cannot be reused across days, restricting optimization to single-day scenarios. If multiple days are included, the algorithm must detect overnights or be rewritten to support multi-assignment aircraft and pilots. An ideal spanning optimizer would eliminate the concept of a finite operational day entirely.",
-            "reason_for_inclusion": "Shows Ryan’s forward-looking perspective on redesigning legacy abstractions for future scalability."
+            "reason_for_inclusion": "Shows Ryan’s forward-looking perspective on redesigning legacy abstractions for future scalability.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Single-Day vs Multi-Day Optimization\" in Ryan's voice. Context: Explains limitations of the single-day assumption and requirements for spanning multi-day scheduling. Topics: multi-day scheduling, overnight detection, operational constraints, algorithm design Tone: technical, analytical"
         },
         {
             "title": "Optimus — Customer Flexibility and Incentive Pricing",
             "date": "2020-06-20",
             "source": "whitepaper",
             "topics": [
-              "customer incentives",
-              "pricing algorithms",
-              "schedule-aware pricing",
-              "revenue yield"
+                "customer incentives",
+                "pricing algorithms",
+                "schedule-aware pricing",
+                "revenue yield"
             ],
             "context": "Explains how customer flexibility can be leveraged to improve overall schedule efficiency.",
-            "tone": ["technical", "explanatory"],
+            "tone": [
+                "technical",
+                "explanatory"
+            ],
             "content": "The pricing system prompts customers to enter only their city pair and the day of flight. The revenue yield algorithm then runs Optimus at 15-minute increments to find times where adding a flight improves schedule efficiency. When such opportunities exist, the system offers discounted prices to incentivize customer flexibility.",
-            "reason_for_inclusion": "Captures Ryan’s integration of economic incentives with operational optimization."
+            "reason_for_inclusion": "Captures Ryan’s integration of economic incentives with operational optimization.",
+            "user_prompt": "Write a technical memo/whitepaper section titled \"Optimus — Customer Flexibility and Incentive Pricing\" in Ryan's voice. Context: Explains how customer flexibility can be leveraged to improve overall schedule efficiency. Topics: customer incentives, pricing algorithms, schedule-aware pricing, revenue yield Tone: technical, explanatory"
         }
     ]
 }

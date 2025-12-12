@@ -3,7 +3,13 @@
     "source": "email",
     "topic": "mortgage refinancing follow-up and credit score troubleshooting",
     "context": "Responding to a mortgage broker after receiving equity reports and discussing next steps needed for refinancing.",
-    "tone": ["professional", "transparent", "mildly frustrated but constructive", "solution-oriented"],
+    "tone": [
+        "professional",
+        "transparent",
+        "mildly frustrated but constructive",
+        "solution-oriented"
+    ],
     "content": "Thanks for sending these reports. It's good to know the equity position is improving.\n\nI've reached out to the lender this morning and sent bank statements for the months in question, along with a request for clarification on the auto-payment subscription history, since it's not visible on the customer-facing portal. I asked if they can determine when or by whom the auto payment setting was toggled.\n\nThis situation is a bit head-scratching and somewhat frustrating. The credit score I pulled today through the lender's portal came back at 717, but I'm assuming the median needs to be above 720 for any meaningful rate difference.\n\nThe lender's credit tool also indicated that my credit card balance was having a high impact on my score, so I went ahead and paid that off completely. I'd prefer to be on the note, so I'm going to keep working on correcting the statements and doing what I can to rapidly improve my score over the next few days. Let me know if you have any other suggestions or contingency scenarios.\n\nThank you again.\n\nRyan",
-    "reason_for_inclusion": "Captures problem-solving communication style, tone modulation under mild frustration, financial/logistical reasoning, and the way Ryan frames uncertainty while remaining constructive."
-  }
+    "reason_for_inclusion": "Captures problem-solving communication style, tone modulation under mild frustration, financial/logistical reasoning, and the way Ryan frames uncertainty while remaining constructive.",
+    "user_prompt": "Draft an email in Ryan's voice. Context: Responding to a mortgage broker after receiving equity reports and discussing next steps needed for refinancing. Topic: mortgage refinancing follow-up and credit score troubleshooting Tone: professional, transparent, mildly frustrated but constructive, solution-oriented"
+}
