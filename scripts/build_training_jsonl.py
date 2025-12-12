@@ -20,6 +20,20 @@ from typing import Any, Dict, List, Optional, Union
 
 JsonDict = Dict[str, Any]
 
+def rel_path_posix(path: Path, root: Path) -> str:
+    """
+    Return a stable, cross-platform relative path string for metadata.
+    Always uses forward slashes, even on Windows.
+    """
+    return path.relative_to(root).as_posix()
+
+def without_metadata(row: JsonDict) -> JsonDict:
+    if "metadata" not in row:
+        return row
+    out = dict(row)
+    out.pop("metadata", None)
+    return out
+
 
 def load_json(path: Path) -> Optional[Union[JsonDict, List[Any]]]:
     try:
@@ -335,6 +349,13 @@ def main() -> int:
         help="Output JSONL path",
     )
     parser.add_argument(
+        "--out-openai",
+        type=str,
+        default="",
+        help="Optional OpenAI-upload-friendly output JSONL path (metadata omitted). "
+        "Defaults to a sibling file named '<stem>.openai<suffix>'.",
+    )
+    parser.add_argument(
         "--no-metadata",
         action="store_true",
         help="Omit top-level `metadata` fields (recommended for platform.openai.com UI uploads).",
@@ -359,9 +380,12 @@ def main() -> int:
     out_path = Path(args.out).expanduser().resolve()
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
+    out_openai_path = Path(args.out_openai).expanduser().resolve() if args.out_openai else out_path.with_name(out_path.stem + ".openai" + out_path.suffix)
+    out_openai_path.parent.mkdir(parents=True, exist_ok=True)
+
     json_files = sorted(corpus_dir.rglob("*.json"))
 
-    rows: List[str] = []
+    rows: List[JsonDict] = []
     skipped_missing_prompt = 0
     skipped_missing_text = 0
     invalid_files = 0
@@ -387,7 +411,7 @@ def main() -> int:
                     row: JsonDict = {"messages": w}
                     if not args.no_metadata:
                         row["metadata"] = {
-                            "path": str(p.relative_to(corpus_dir)),
+                            "path": rel_path_posix(p, corpus_dir),
                             "source": entry.get("source"),
                             "date": entry.get("date"),
                             "id": entry.get("id"),
@@ -398,7 +422,7 @@ def main() -> int:
                             "channel": entry.get("channel"),
                             "kind": "transcript",
                         }
-                    rows.append(json.dumps(row, ensure_ascii=False))
+                    rows.append(row)
                     transcript_rows += 1
                 continue
 
@@ -422,7 +446,7 @@ def main() -> int:
             }
             if not args.no_metadata:
                 row["metadata"] = {
-                    "path": str(p.relative_to(corpus_dir)),
+                    "path": rel_path_posix(p, corpus_dir),
                     "source": entry.get("source"),
                     "date": entry.get("date"),
                     "id": entry.get("id"),
@@ -432,12 +456,25 @@ def main() -> int:
                     "tone": entry.get("tone"),
                     "channel": entry.get("channel"),
                 }
-            rows.append(json.dumps(row, ensure_ascii=False))
+            rows.append(row)
 
-    out_path.write_text("\n".join(rows) + ("\n" if rows else ""), encoding="utf-8")
+    # Write primary output
+    primary_rows = [without_metadata(r) for r in rows] if args.no_metadata else rows
+    out_path.write_text(
+        "\n".join(json.dumps(r, ensure_ascii=False) for r in primary_rows) + ("\n" if primary_rows else ""),
+        encoding="utf-8",
+    )
+
+    # Write OpenAI-friendly output (always without metadata)
+    openai_rows = [without_metadata(r) for r in rows]
+    out_openai_path.write_text(
+        "\n".join(json.dumps(r, ensure_ascii=False) for r in openai_rows) + ("\n" if openai_rows else ""),
+        encoding="utf-8",
+    )
 
     print(f"Corpus: {corpus_dir}")
     print(f"Output: {out_path}")
+    print(f"Output (OpenAI): {out_openai_path}")
     print(f"JSON files scanned: {len(json_files)} (invalid/empty: {invalid_files})")
     print(f"Rows written: {len(rows)}")
     print(f"Skipped (missing user_prompt): {skipped_missing_prompt}")
