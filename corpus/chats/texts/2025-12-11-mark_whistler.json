@@ -1,0 +1,49 @@
+{
+    "id": "sms_2025-12-11_whistler_trip_planning_with_mark",
+    "date": "2025-12-11T12:00:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["travel", "group_planning", "coordination", "leadership"],
+    "tone": ["casual", "competent", "non_controlling"],
+    "context": "Mark checks in with Ryan about logistics for an upcoming Whistler ski trip. The exchange shows Ryan's organizer role: providing clarity, referencing shared artifacts, managing uncertainty, and setting expectations without micromanaging others.",
+    "text": [
+      {
+        "from": "Mark",
+        "msg": "Hey still planning whistler gsw?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Yeah! There's a FB with details!"
+      },
+      {
+        "from": "Mark",
+        "msg": "Ah ok gotcha haven't opened that app in a minute ha will check\nEveryone arriving Weds night?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "that's the plan. Nobody has shared itineraries yet"
+      },
+      {
+        "from": "Mark",
+        "msg": "Gotcha so you're booking house(s) for those dates. You have flights booked?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Yes. I'm working with the company from last time directly. We are either going to have the same house as 2023 or a setup up if enough people get back to me in time"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I point him to the shared source of truth rather than re-explaining everything. This keeps me from becoming a bottleneck."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I state the intended plan but explicitly acknowledge missing inputs so expectations stay flexible."
+      },
+      {
+        "msg_ref": 6,
+        "thought": "I confirm that I'm handling the high-friction parts (housing coordination) while making it clear outcomes depend on others responding. This sets responsibility boundaries without pressure."
+      }
+    ]
+  }

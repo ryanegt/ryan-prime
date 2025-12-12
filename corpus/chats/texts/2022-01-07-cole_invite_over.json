@@ -1,0 +1,41 @@
+{
+    "id": "sms_2022-01-07_soft_commitment_with_cole",
+    "date": "2022-01-07T20:15:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["social", "planning", "energy_management"],
+    "tone": ["casual", "open", "non_committal"],
+    "context": "Ryan coordinates a potential night out while feeling ambivalent. He creates an intermediate option that preserves flexibility and avoids overcommitting.",
+    "text": [
+      {
+        "from": "Cole",
+        "msg": "Hey! Just finishing my team dinner. What are you up to?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Some friends are headed to Blake's. Might be a good option. I'm not in a going out mood but slowly being convinced haha"
+      },
+      {
+        "from": "Cole",
+        "msg": "You should go! I'll go out for a bit. I have a meeting at 7 am so I'm not trying to be out too late"
+      },
+      {
+        "from": "Ryan",
+        "msg": "How about stop by here for a few pregame drinks and we can decide if we want to bounce out for a bit"
+      },
+      {
+        "from": "Cole",
+        "msg": "Good idea. Doing a quick rinse. What's you addy?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "500 Means Street NW 30318"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 4,
+        "thought": "I'm not ready to commit to going out, so I create a low-effort staging step that keeps the night flexible without shutting it down."
+      }
+    ]
+  }

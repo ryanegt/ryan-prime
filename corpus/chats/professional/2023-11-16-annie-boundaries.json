@@ -1,0 +1,67 @@
+{
+    "id": "slack_2023-11-16_certification_boundary_explanation_with_annie",
+    "date": "2023-11-16T10:50:00-08:00",
+    "source": "slack",
+    "channel": "professional_dialogue",
+    "topic": [
+      "certification",
+      "organizational_boundaries",
+      "mentorship",
+      "regulatory_reasoning",
+      "software_scope"
+    ],
+    "tone": ["patient", "clarifying", "supportive"],
+    "context": "Ryan explains the boundary between air carrier software and type certification software to a colleague, translating regulatory concepts into an accessible mental model while maintaining psychological safety.",
+    "classification": "core_professional",
+    "weight": "high",
+    "text": [
+      {
+        "from": "Annie Cheng",
+        "msg": "I spoke to Phil and I think it's slide 11... I'm talking very specifically about the software that's going to be used for the FAA TC testing..."
+      },
+      {
+        "from": "Ryan",
+        "msg": "Ahhh... so if the function sits inside the TC/part 25 boundary, then it will be owned by the MVSS or the vehicle teams..."
+      },
+      {
+        "from": "Annie Cheng",
+        "msg": "No idea what Part 25 is lol we should probably talk :)"
+      },
+      {
+        "from": "Ryan",
+        "msg": "vehicle certification!"
+      },
+      {
+        "from": "Annie Cheng",
+        "msg": "I'm an airspace person lol please don't make fun of me."
+      },
+      {
+        "from": "Ryan",
+        "msg": "Not at all! there is a terrible learning curve/cliff to overcome at this job and I'm def here to help :)"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Basically, there are planning functions that a dispatcher or operations person will do far in advance (business case)... and planning that a pilot will do before they take off (safety case)..."
+      },
+      {
+        "from": "Ryan",
+        "msg": "if you're talking about a function that falls in the first bucket, that's the FOS/air carrier... if it's the second bucket, that's type cert..."
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I want to anchor the answer around ownership boundaries rather than implementation details, because that's the real source of confusion."
+      },
+      {
+        "msg_ref": 6,
+        "thought": "I explicitly normalize the learning curve to keep the conversation safe and productive."
+      },
+      {
+        "msg_ref": 7,
+        "thought": "I switch to a business-case vs safety-case framing because it's the fastest way to transfer intuition across domains."
+      }
+    ],
+    "exclude_from": ["casual_chat", "humor_modeling"]
+  }
+  

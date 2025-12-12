@@ -1,0 +1,63 @@
+{
+    "id": "slack_2023-10-12_product_comparison_and_demo_timing_with_john_and_phil",
+    "date": "2023-10-12T07:46:00-07:00",
+    "source": "slack",
+    "channel": "professional_dialogue",
+    "topic": [
+      "product_strategy",
+      "vendor_evaluation",
+      "demo_timing",
+      "stakeholder_alignment",
+      "collaboration"
+    ],
+    "tone": ["measured", "evaluative", "constructive"],
+    "context": "Ryan discusses whether and when to share Wisk Airline flight planning capabilities with SkyGrid, balancing product maturity, stakeholder interest, and comparative evaluation against existing tools like ForeFlight/Wiskey.",
+    "classification": "core_professional",
+    "weight": "medium_high",
+    "text": [
+      {
+        "from": "John Colthar",
+        "msg": "What are your thoughts on sharing Wiskey Business with SkyGrid?"
+      },
+      {
+        "from": "Phil Swinsburg",
+        "msg": "Lets chat when we next meet up at the SW Sync. I am just not seeing the value add on the flight planning side..."
+      },
+      {
+        "from": "Ryan",
+        "msg": "I think it would be good to demo at a specific point of maturity, after this meeting I have a capability threshold in mind that a demo would be productive enough"
+      },
+      {
+        "from": "John Colthar",
+        "msg": "Given Phil's comments, I'm not sure that he's interested in FF directly... Trying to read the tea leaves here."
+      },
+      {
+        "from": "Ryan",
+        "msg": "I've only used ForeFlight as a private pilot, and the capabilities are really designed for private pilots or 135s... Unless they have something different meant for scheduled carriers, I'm not sure how useful it is overall."
+      },
+      {
+        "from": "John Colthar",
+        "msg": "That's the impression I have as well... It will be interesting to see how it's pitched and what changes are planned to add fleet capabilities."
+      },
+      {
+        "from": "Ryan",
+        "msg": "I need you to teach a master class on note taking during meetings. Looks great. Now just need to add some JIRA tasks...\nIf you have some time, I started a slide deck to explain nominal flight operations..."
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 3,
+        "thought": "I want to avoid demoing too early; credibility matters more than exposure."
+      },
+      {
+        "msg_ref": 5,
+        "thought": "I ground my opinion in lived experience rather than abstract comparisons."
+      },
+      {
+        "msg_ref": 7,
+        "thought": "Publicly recognizing good work builds momentum and trust, then I redirect that energy toward execution."
+      }
+    ],
+    "exclude_from": ["casual_chat", "conflict_modeling"]
+  }
+  

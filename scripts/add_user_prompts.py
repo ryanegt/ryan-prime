@@ -167,6 +167,10 @@ def update_file(path: Path, *, dry_run: bool) -> Tuple[int, int, str]:
     elif is_entry_dict(data):
         container_kind = "root"
         entries = [data]  # type: ignore[list-item]
+    elif isinstance(data, list) and all(isinstance(e, dict) for e in data):
+        # Some corpus files are stored as a top-level list of entries.
+        container_kind = "list"
+        entries = [e for e in data if isinstance(e, dict)]
     else:
         return (0, 0, "skipped")
 
@@ -188,6 +192,8 @@ def update_file(path: Path, *, dry_run: bool) -> Tuple[int, int, str]:
             path.write_text(json.dumps(data, ensure_ascii=False, indent=4) + "\n", encoding="utf-8")
         elif container_kind == "root":
             path.write_text(json.dumps(entries[0], ensure_ascii=False, indent=4) + "\n", encoding="utf-8")
+        elif container_kind == "list":
+            path.write_text(json.dumps(data, ensure_ascii=False, indent=4) + "\n", encoding="utf-8")
 
     return (seen, updated, "updated")
 

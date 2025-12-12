@@ -1,0 +1,57 @@
+{
+    "id": "sms_2025-03-25_dinner_and_climbing_with_nathan",
+    "date": "2025-01-xxT18:00:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["family", "logistics", "coordination", "casual"],
+    "tone": ["warm", "matter_of_fact", "light"],
+    "context": "Ryan and his younger brother Nathan coordinate dinner and climbing. Captures Ryan's natural low-friction coordination style, his tendency to smooth over scheduling shifts, and his quick pivot into an information-sharing mode when asked about volcanic activity.",
+    "text": [
+      {
+        "from": "Ryan",
+        "msg": "Would you be down for dinner tonight and climb tomorrow? I forgot I told Justin we'd hang out and cook something"
+      },
+      {
+        "from": "Nathan",
+        "msg": "Yeah I'd be down for that. That works better actually since I can get off earlier tomorrow"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Sounds good. Meet over here around 6/630?"
+      },
+      {
+        "from": "Nathan",
+        "msg": "I'll probably be a bit late but you go ahead without me"
+      },
+      {
+        "from": "Ryan",
+        "msg": "No worries Justin just walked in the door"
+      },
+      {
+        "from": "Nathan",
+        "msg": "What do you use to track the volcanic activity"
+      },
+      {
+        "from": "Ryan",
+        "msg": "This to track earthquake swarms, I'll try to get the right filter combo for swarms just on reykjanes"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 1,
+        "thought": "I'm trying to reconcile double-booking in a way that doesn't create friction. Offering an alternative plan that still preserves brother time and keeps my commitment to Justin."
+      },
+      {
+        "msg_ref": 3,
+        "thought": "I give a soft time window (6/6:30) because Nathan operates better with flexible anchors than rigid times. My tone stays light, not managerial."
+      },
+      {
+        "msg_ref": 5,
+        "thought": "I normalize his lateness immediately—family gets the easy runway. Also, Justin showing up organically solves the timing anyway."
+      },
+      {
+        "msg_ref": 7,
+        "thought": "I switch instantly into 'science explainer' mode because that's our shared interest language. I give him the tool I actually use and hint at tuning parameters, because part of our dynamic is me giving him the expert-filter version, not the novice version."
+      }
+    ]
+  }

@@ -1,0 +1,57 @@
+{
+    "id": "sms_2020-07-14_macros_and_camp_banter_with_brian",
+    "date": "2020-07-14T14:30:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["fitness", "nutrition", "friendship", "body_image"],
+    "tone": ["camp_adjacent", "practical", "supportive", "lightly_boundaried"],
+    "context": "Brian asks Ryan for fitness and nutrition advice in a campy, playful tone. The exchange shows Ryan matching playful energy without fully mirroring it, providing concrete advice, and gently setting boundaries around self-image extremes.",
+    "text": [
+      {
+        "from": "Brian",
+        "msg": "Hey Titty sprinkles\nQuestion: do you carb count?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Hey pumpkin butt\nYeah, generally. Why you ask?"
+      },
+      {
+        "from": "Brian",
+        "msg": "Focusing on losing weight (I'm 5lbs down woot woot) but also lifting/running/biking. You and I have similar body types at baseline (prior to me getting chunky) so figured I could mimic your general carb/protein/fat macro proportions\nCurrently on an 1800 cal diet with less than 35% cal from carbs\nSo do you know how many carbs you usually limit yourself to a day?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Um yeah it kind of depends if I'm doing to keto or not. I am now and trying to limit to less than 25 g. If I'm not then usually still less than 100 g\nHow often are you working out these days?"
+      },
+      {
+        "from": "Brian",
+        "msg": "Almost everyday\nRunning 5+ miles every other day, lifting 3x a week and calisthenics"
+      },
+      {
+        "from": "Ryan",
+        "msg": "I'm gotten off the long runs. Usually just run 1-2 miles before every lift now to get the heart rate up. But try to do that 5-6 days/wk\n*ive"
+      },
+      {
+        "from": "Brian",
+        "msg": "Trying to lose weight .... so the long runs have been helping\nTrying to get back to my twink days 😜"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Lol maybe let's not go that far :P"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I mirror his camp greeting just enough to signal comfort and familiarity without fully adopting the persona."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I answer concretely and then ask about training volume because macros without workload context are meaningless."
+      },
+      {
+        "msg_ref": 8,
+        "thought": "I gently check the self-image framing. I don't shame or lecture, but I also don't reinforce an extreme or regressive goal."
+      }
+    ]
+  }

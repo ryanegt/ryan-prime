@@ -1,0 +1,71 @@
+{
+    "id": "slack_2024-05-21_to_06-10_async_collaboration_and_system_prep_with_dan",
+    "date": "2024-05-21T22:29:00-07:00",
+    "source": "slack",
+    "channel": "professional_dialogue",
+    "topic": [
+      "execution",
+      "collaboration",
+      "knowledge_management",
+      "system_preparation",
+      "async_work"
+    ],
+    "tone": ["pragmatic", "collaborative", "lightly_humorous"],
+    "context": "Ryan coordinates early system preparation using provisional data, consolidates domain knowledge into shared documentation, and optimizes collaboration by shifting synchronous meetings to asynchronous review.",
+    "classification": "core_professional",
+    "weight": "medium_high",
+    "text": [
+      {
+        "from": "Ryan",
+        "msg": "ey dan, when you get a chance, could you send me the vertiport names, identifiers and a lat/lng for each ... as well as the direction of the flight. that will at least let me prep the system for when we have the schedules. I'm probably a little more in the dark than you suspect haha."
+      },
+      {
+        "from": "Dan Parsons",
+        "msg": "Do you mind if the codes are completely made up?"
+      },
+      {
+        "from": "Dan Parsons",
+        "msg": "If that's okay, let's go with:\nDeparture Vertiport: Brisbane City East (VBCE) - -27.47287, 153.03177\nDestination Vertiport: Brisbane Airport - International (VBAI) - -27.40280, 153.10811\nI think that gives you the direction but if you want the general direction, it is North East."
+      },
+      {
+        "from": "Ryan",
+        "msg": "perfect!"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Hey Dan, I'm combining and reorganizing our VAS knowledge into this doc if you have a moment to provide comments/additions/feedback: https://docs.google.com/document/d/15qQUwQyuqyJU9mTOcidaZMf3gw2vhnTf0LeX-FFQ_54/edit"
+      },
+      {
+        "from": "Ryan",
+        "msg": "For our meeting later, if you'd rather spend the time taking a look at the structure and content of said document, we can effectively \"turn a meeting into an email\" :)"
+      },
+      {
+        "from": "Dan Parsons",
+        "msg": "That's a really good idea. Let's do that. 👍"
+      },
+      {
+        "from": "Ryan",
+        "msg": "For the record, a lot of the exposition/sections is free association... not necessarily formal work so feel free to just reword things if you're so inclined/inspired.\nthat's how you know its not chatgpt haha"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 1,
+        "thought": "I want to unblock system prep early, even with incomplete or provisional data."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "Placeholder identifiers are totally fine as long as spatial relationships are correct."
+      },
+      {
+        "msg_ref": 6,
+        "thought": "Written artifacts scale better than meetings; offering async review respects time and improves clarity."
+      },
+      {
+        "msg_ref": 8,
+        "thought": "I explicitly lower the bar for polish so collaborators feel safe editing and contributing."
+      }
+    ],
+    "exclude_from": ["casual_chat", "conflict_modeling"]
+  }
+  

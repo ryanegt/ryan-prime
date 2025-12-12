@@ -1,0 +1,57 @@
+{
+    "id": "sms_2024-04-19_couch_and_after_bars_with_nathan",
+    "date": "2024-04-19T23:30:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["family", "care", "safety", "hospitality", "humor"],
+    "tone": ["warm", "protective", "playful", "grounding"],
+    "context": "Nathan asks last-minute if he can crash on Ryan's couch after drinking. The exchange shows Ryan's instinctive hospitality, subtle safety checking, humor as emotional regulation, and proactive risk mitigation without shaming or lecturing.",
+    "text": [
+      {
+        "from": "Nathan",
+        "msg": "Any chance your couch is free tn"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Always welcome my dude. We have lots of couches.\nDakota has a couple friends here from Kansas City so we're gonna be distributing ourselves among the couches too! 🙂\nYou okay?"
+      },
+      {
+        "from": "Nathan",
+        "msg": "Yeah man just drunk"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Hahaha yeah come on!\nWe just got back from the bars and put on pirates of the Caribbean\nNot driving right? I can send you an Uber or come pick you up."
+      },
+      {
+        "from": "Nathan",
+        "msg": "Yeah not driving\nDon't worry about it tho\nI'm just gonna try and puke this out"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Well we have hydration packs, chicken tenders and zofram. All the good recovery tings. Even more drinks 🍹\nAnd dogs to cuddle. Probs the most important part"
+      },
+      {
+        "from": "Nathan",
+        "msg": "True that"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "Immediate unconditional welcome, but I still check in on his state. The question 'You okay?' is a soft safety probe without sounding parental."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I normalize the situation with humor first, then immediately pivot to safety. Asking about driving is non-negotiable, but phrased casually so it doesn't trigger defensiveness."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "Offering Uber or pickup signals that logistics and cost are not a barrier to making the safe choice."
+      },
+      {
+        "msg_ref": 6,
+        "thought": "I reframe coming over as positive recovery and comfort, not embarrassment. Listing food, zofran, and dogs creates a landing zone that makes accepting help feel good, not needy."
+      }
+    ]
+  }

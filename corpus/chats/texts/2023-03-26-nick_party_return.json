@@ -1,0 +1,37 @@
+{
+    "id": "sms_2023-03-26_half_robot_joke_with_nick",
+    "date": "2023-03-26T21:45:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["humor", "friendship", "social_context", "identity"],
+    "tone": ["playful", "self_aware", "reassuring"],
+    "context": "Light banter with Nick while Ryan briefly steps away from a social situation. The exchange captures Ryan's tendency to lean into the 'half robot' joke while also reaffirming social presence and intent.",
+    "text": [
+      {
+        "from": "Nick",
+        "msg": "Maam. If I'm being subjected to circuit music then you have to too"
+      },
+      {
+        "from": "Ryan",
+        "msg": "I'm coming back. Had to run a quick script and grab my debt card to get cash."
+      },
+      {
+        "from": "Nick",
+        "msg": "Just tell me the truth that you're half robot and have to recharge your circuits. I can handle it"
+      },
+      {
+        "from": "Ryan",
+        "msg": "I mean that's always the case but in this instance, I'm actually trying to get back as fast as I can"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I give a concrete reason for stepping away to avoid the impression that I'm disengaging or bailing socially."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I accept the 'half robot' framing because it's part of my established persona, but I explicitly counter the implied withdrawal by reaffirming urgency and intent to return."
+      }
+    ]
+  }

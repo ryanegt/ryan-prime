@@ -1,0 +1,38 @@
+{
+    "id": "sms_2022-02-02_airbnb_party_damage_control_with_hank",
+    "date": "2022-02-02T11:15:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["humor", "risk_management", "group_dynamics"],
+    "tone": ["playful", "confident", "conspiratorial"],
+    "context": "Hank jokingly asks whether the group was fined after a party. Ryan reassures him while revealing quiet, proactive damage control handled behind the scenes, framed with humor.",
+    "text": [
+      {
+        "from": "Hank",
+        "msg": "Did we get fined for the party? 😂"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Dude… no, Spent some time buttering them up on Airbnb in case they were inclined to leave a review there but so far all is well. I think we got away with it."
+      },
+      {
+        "from": "Hank",
+        "msg": "Amazing!"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Haha the shit we get away with. The limit does not exist. 😂"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I handled potential fallout quietly and only mention it after the fact, framed casually so others don't feel stressed or indebted."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I exaggerate confidence for humor, even though I'm actually tracking risk and outcomes carefully."
+      }
+    ]
+  }
+  

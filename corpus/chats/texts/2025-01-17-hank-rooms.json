@@ -1,0 +1,49 @@
+{
+    "id": "sms_2025-01-17_park_city_housing_shuffle_with_hank",
+    "date": "2025-01-17T16:45:00-05:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["travel", "housing", "group_dynamics", "logistics", "leadership"],
+    "tone": ["organized", "accommodating", "transparent"],
+    "context": "Hank checks on availability for a Park City trip. Ryan manages shifting attendance, bed preferences, and social comfort by laying out options, expanding inventory, and delegating recruitment in a way that preserves goodwill.",
+    "text": [
+      {
+        "from": "Hank",
+        "msg": "Is your Park city house full?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Spencer had to back out so I know there's at least a spot available\nCan you come?"
+      },
+      {
+        "from": "Hank",
+        "msg": "I want to go for sure. Looking for a spot. Was thinking to get a hotel. Who would I be rooming with?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Nobody has claimed actual bed spots yet… but here are some possible options:\n\n- open bunk or double bed in a big room with Alejandro, Perrin, Jesse Koehler, Jonathan Abernathy & hot frens\n- Share a King/Queen with Resnicow\n- Share a King w Thom & Danny\n- Share a King w Dakota & myself\n\nAnd we can check out the house and invite list tmrw if you want to look into other shuffle options"
+      },
+      {
+        "from": "Hank",
+        "msg": "I wouldn't want to be in a big room. I'd be down to share with Jake but he said wants his own room"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Hey, so based on everyone wanting to go, I'm going to grab this place that's right next to the current house: https://www.vrbo.com/4322697?chkin=2025-02-20&chkout=2025-02-24 ... would you still want your own room?\n\nRight now, Jacque and his BF, Matt & Mark, and either us or Nick and Zane would be in the new place, with space for another 3-4 people. If you want you can help recruit the rest of the space 😊"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I confirm availability and immediately check his intent so I don't reserve capacity unnecessarily."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I lay out all current options transparently so he can self-select instead of negotiating privately."
+      },
+      {
+        "msg_ref": 6,
+        "thought": "When preferences tighten, I expand inventory rather than forcing a bad fit. Offering recruitment gives him agency and distributes the coordination load."
+      }
+    ]
+  }

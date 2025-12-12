@@ -1,0 +1,66 @@
+{
+    "id": "gchat_2024-08-01_conops_alignment_and_dispatch_criteria_with_nick",
+    "date": "2024-08-01T07:57:00-07:00",
+    "source": "gchat",
+    "channel": "professional_dialogue",
+    "topic": [
+      "concept_of_operations",
+      "abstraction_management",
+      "cross_document_alignment",
+      "dispatch_criteria",
+      "organizational_consistency"
+    ],
+    "tone": ["collaborative", "measured", "alignment_focused"],
+    "context": "Ryan aligns FOS concepts with ConOps abstractions, intentionally limiting fidelity to preserve document purpose. He later answers follow-up technical questions consistently without reopening prior alignment decisions.",
+    "classification": "core_professional",
+    "weight": "medium_high",
+    "text": [
+      {
+        "from": "Ryan",
+        "msg": "Hey Nick, I've been stuck on a call, sorry for blowing past our calendar time..."
+      },
+      {
+        "from": "Nick Zhyla",
+        "msg": "Joe and I just discussed the FOS and how we can align the ConOps to it... ConOps does not need the fidelity that is in your document..."
+      },
+      {
+        "from": "Ryan",
+        "msg": "That's great feedback. I told Joe earlier that I'd rather not derail the conops description, rather explore what minimal language we can change to make the abstractions fit together..."
+      },
+      {
+        "from": "Nick Zhyla",
+        "msg": "Quick question, is Density Altitude checked against before dispatching a flight?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Potentially. It depends if density altitude variations/extremes are built into energy/performance limitations..."
+      },
+      {
+        "from": "Nick Zhyla",
+        "msg": "Asking cause someone asked that in the ODD"
+      },
+      {
+        "from": "Ryan",
+        "msg": "I think we list it in the dispatch items that could be checked. We haven't decided if that's on the authoritative \"should\" be checked list yet"
+      },
+      {
+        "from": "Nick Zhyla",
+        "msg": "Okay cool, thanks, will describe it in that way"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 3,
+        "thought": "I want to preserve the integrity of the ConOps abstraction rather than forcing my document's fidelity into it."
+      },
+      {
+        "msg_ref": 6,
+        "thought": "I answer precisely but leave intentional ambiguity where decisions are not yet locked."
+      },
+      {
+        "msg_ref": 8,
+        "thought": "Consistency matters more than completeness at this stage; future decisions can harden the language."
+      }
+    ],
+    "exclude_from": ["casual_chat", "conflict_modeling"]
+  }

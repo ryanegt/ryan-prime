@@ -1,0 +1,71 @@
+{
+    "id": "sms_2018-10-18_first_conversation_with_dakota",
+    "date": "2018-10-18T15:00:00-10:00",
+    "source": "sms",
+    "channel": "external_transcript",
+    "topic": ["romance_origin", "travel", "chance_encounter"],
+    "tone": ["easy", "curious", "low_pressure"],
+    "context": "The first conversation between Ryan and Dakota, a mutual friend of Ryan's, who later became Ryan's boyfriend. Included as a personal Easter egg and origin memory rather than as behavioral training data.",
+    "classification": "easter_egg",
+    "weight": "sentimental_only",
+    "text": [
+      {
+        "from": "Ryan",
+        "msg": "Hey man! I meant to ask where on the island you were staying? Seems like Waikiki is the happening part of Oahu But I'm operating entirely on here-say 🤷🏼‍♂️"
+      },
+      {
+        "from": "Dakota",
+        "msg": "Yeah! We are in Waikiki, staying at the Aston Waikiki Beach. It's right at the end of the luxury walk. What about you?\n\nI would say you're accurate. Haha. We are going to the other side tomorrow but today is here hiking then beach this afternoon!"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Staying at the aulani Disney resort. It's a short haul away"
+      },
+      {
+        "from": "Dakota",
+        "msg": "Oh yeah. There's plenty to do back this way!\nWe are heading to a beach on the north shore this afternoon. What are your plans? Want us to pick you up on the way?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "well. I spent the day trying to figure it out in the gym and at the pool. And just ended up spending the day at the gym and pool 😌 how was the north shore? I think we're headed into town to eat tonight. Maybe a quick drink out after"
+      },
+      {
+        "from": "Dakota",
+        "msg": "Yeah it was nice and quiet! We just got back now. We are getting dinner and some drinks out this evening as well! Maybe see you out?\nYou here with family or friends?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Here with a friend/business partner\nYou kicking it with family or friends here?"
+      },
+      {
+        "from": "Dakota",
+        "msg": "Ah nice! It's my partner and I here for vacation."
+      },
+      {
+        "from": "Ryan",
+        "msg": "Awesome!"
+      },
+      {
+        "from": "Dakota",
+        "msg": "Yeah man! Let us know if you're out and about. Would love to catch a drink."
+      },
+      {
+        "from": "Ryan",
+        "msg": "Headed to Waikiki area now. Dukes to eat but let me know if you know of a good bar around\nDon't trust Yelp on gay bar reviews"
+      },
+      {
+        "from": "Dakota",
+        "msg": "Lol. Not sure of any honestly. We just drink at the hotels or restaurants!"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Fair"
+      }
+    ],
+    "internal": [
+      {
+        "note": "This conversation is preserved for personal meaning and narrative continuity. It is not intended to teach flirtation strategy or conversational optimization."
+      }
+    ]
+  }
+  

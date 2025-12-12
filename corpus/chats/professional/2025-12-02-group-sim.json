@@ -1,0 +1,74 @@
+{
+    "id": "gchat_2025-12-02_fos_route_db_and_dynamic_behavior_explanation",
+    "date": "2025-12-02T12:19:00-08:00",
+    "source": "gchat",
+    "channel": "professional_dialogue",
+    "topic": [
+      "system_behavior",
+      "internal_support",
+      "simulation_integration",
+      "data_ingestion",
+      "product_boundaries"
+    ],
+    "tone": ["helpful", "precise", "unblocking"],
+    "context": "Ryan explains how the FOS ingests route and aircraft data from simulation environments, clarifying what updates dynamically, what is configurable by users, and what would require additional development.",
+    "classification": "core_professional",
+    "weight": "medium_high",
+    "text": [
+      {
+        "from": "Suchitra Palat",
+        "msg": "Hi Ryan! Good afternoon. I wanted to check if the FOS is to date with the route DB? I want to dispatch missions on demand from the FOS to my new scenarios"
+      },
+      {
+        "from": "Ryan",
+        "msg": "Hey Suchitra! What environment configuration are you using? I can check."
+      },
+      {
+        "from": "Suchitra Palat",
+        "msg": "So thats the tricky part - i am trying to create a document to help build custom environments if i make my own, will i be able to use it"
+      },
+      {
+        "from": "Ryan",
+        "msg": "the FOS ingests the route database from the environment, so as long as you are reusing the vertiport/FATOs from existing route DBs it should be fine."
+      },
+      {
+        "from": "Ryan",
+        "msg": "if not, its pretty trivial for us to add vertiports/fatos in the FOS"
+      },
+      {
+        "from": "Suchitra Palat",
+        "msg": "If the route DB is updated with new routes, does it dynamically pick them up?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "yes, so long as they are reflected in the sim's /fpmNavDatabaseJson endpoint"
+      },
+      {
+        "from": "Roei Shlagman",
+        "msg": "That's good to hear. Are the aircraft dynamically inferred too?"
+      },
+      {
+        "from": "Ryan",
+        "msg": "we don't dynamically source tail numbers from the sim at the moment... you can add any custom tail number in the FOS as well (before generating the schedule) but it will only effect that sim instance."
+      },
+      {
+        "from": "Ryan",
+        "msg": "if its important to handle any user inputted tail number, we maybe able to add an initialization step to import other tail numbers (from the sim)"
+      }
+    ],
+    "internal": [
+      {
+        "msg_ref": 2,
+        "thought": "I want to understand the environment context before answering so I don't give misleading guidance."
+      },
+      {
+        "msg_ref": 4,
+        "thought": "I explain the ingestion boundary clearly so users can reason about behavior without memorizing internals."
+      },
+      {
+        "msg_ref": 9,
+        "thought": "I offer a potential extension path without committing to scope or timelines."
+      }
+    ],
+    "exclude_from": ["casual_chat", "executive_strategy"]
+  }

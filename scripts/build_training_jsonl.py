@@ -50,6 +50,8 @@ def extract_entries(data: Any) -> List[JsonDict]:
         return [e for e in data["items"] if isinstance(e, dict)]
     if is_entry_dict(data):
         return [data]  # type: ignore[list-item]
+    if isinstance(data, list) and all(isinstance(e, dict) for e in data):
+        return [e for e in data if isinstance(e, dict)]
     return []
 
 
