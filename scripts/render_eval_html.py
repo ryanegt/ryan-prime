@@ -98,6 +98,9 @@ def render_report_html(config: JsonDict, rows: List[EvalRow], run_dir: Path) -> 
     models, grouped = group_for_comparison(rows)
     model_a = models[0] if models else "model"
     model_b = models[1] if len(models) > 1 else None
+    label_a = "fine-tuned" if "ft:" in (model_a or "") else "primary"
+    label_b = "baseline" if model_b else None
+    label_b_str = label_b or "baseline"
 
     buckets = sorted(grouped.keys())
     created = config.get("created_at_utc") or config.get("created_at") or ""
@@ -144,9 +147,13 @@ def render_report_html(config: JsonDict, rows: List[EvalRow], run_dir: Path) -> 
             cards_html.append("</div>")
 
             cards_html.append('<div class="outputs">')
-            cards_html.append(f'<div class="col"><div class="colTitle">{esc(model_a)}</div><pre>{esc(out_a)}</pre></div>')
+            cards_html.append(
+                f'<div class="col"><div class="colTitle"><span class="tag">{esc(label_a)}</span> {esc(model_a)}</div><pre>{esc(out_a)}</pre></div>'
+            )
             if model_b:
-                cards_html.append(f'<div class="col"><div class="colTitle">{esc(model_b)}</div><pre>{esc(out_b)}</pre></div>')
+                cards_html.append(
+                    f'<div class="col"><div class="colTitle"><span class="tag">{esc(label_b_str)}</span> {esc(model_b)}</div><pre>{esc(out_b)}</pre></div>'
+                )
             cards_html.append("</div>")
 
             cards_html.append("</article>")
@@ -323,11 +330,12 @@ def render_report_html(config: JsonDict, rows: List[EvalRow], run_dir: Path) -> 
     }}
     .outputs {{
       display: grid;
-      grid-template-columns: 1fr {"1fr" if model_b else ""};
+      grid-template-columns: {"minmax(0,1fr) minmax(0,1fr)" if model_b else "minmax(0,1fr)"};
       gap: 12px;
       margin-top: 12px;
     }}
-    @media (max-width: 980px) {{
+    /* Keep side-by-side visible for comparison; only stack on very small screens. */
+    @media (max-width: 560px) {{
       .outputs {{ grid-template-columns: 1fr; }}
     }}
     .colTitle {{
@@ -335,6 +343,19 @@ def render_report_html(config: JsonDict, rows: List[EvalRow], run_dir: Path) -> 
       color: var(--accent);
       margin: 4px 0 8px 2px;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }}
+    .tag {{
+      display: inline-block;
+      padding: 2px 8px;
+      margin-right: 6px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.02em;
+      text-transform: lowercase;
+      vertical-align: middle;
+      background: var(--panel);
     }}
     .hidden {{ display: none !important; }}
   </style>

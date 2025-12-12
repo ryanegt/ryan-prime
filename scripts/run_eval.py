@@ -140,6 +140,14 @@ def run_one(
     return ModelResult(model=model, output_text=out, latency_s=dt, usage=usage)
 
 
+def fmt_seconds(s: float) -> str:
+    if s < 60:
+        return f"{s:.1f}s"
+    m = int(s // 60)
+    r = int(s % 60)
+    return f"{m}m{r:02d}s"
+
+
 def write_summary_md(run_dir: Path, config: JsonDict, records: List[JsonDict]) -> None:
     by_model: Dict[str, int] = {}
     for r in records:
@@ -178,6 +186,11 @@ def main() -> int:
     parser.add_argument("--runs-dir", type=str, default="runs", help="Directory to place run outputs")
     parser.add_argument("--run-id", type=str, default=None, help="Override run id folder name")
     parser.add_argument("--dry-run", action="store_true", help="Do not call the API; just write files")
+    parser.add_argument(
+        "--progress",
+        action="store_true",
+        help="Print progress after each API call (recommended for long runs).",
+    )
     parser.add_argument(
         "--conf",
         type=str,
@@ -236,6 +249,16 @@ def main() -> int:
     records: List[JsonDict] = []
     out_lines: List[str] = []
 
+    # Precompute total work for progress/ETA.
+    valid_items = []
+    for item in items:
+        prompt = item.get("prompt")
+        if isinstance(prompt, str) and prompt.strip():
+            valid_items.append(item)
+    total_calls = len(valid_items) * len([m for m in models if m])
+    completed_calls = 0
+    t_start = time.time()
+
     for item in items:
         prompt = item.get("prompt")
         if not isinstance(prompt, str) or not prompt.strip():
@@ -252,6 +275,7 @@ def main() -> int:
                 max_output_tokens=args.max_output_tokens,
                 dry_run=args.dry_run,
             )
+            completed_calls += 1
             rec: JsonDict = {
                 "id": item.get("id"),
                 "bucket": item.get("bucket"),
@@ -266,6 +290,22 @@ def main() -> int:
             }
             records.append(rec)
             out_lines.append(json.dumps(rec, ensure_ascii=False))
+
+            if args.progress:
+                elapsed = time.time() - t_start
+                rate = elapsed / completed_calls if completed_calls else 0.0
+                remaining = max(0, total_calls - completed_calls)
+                eta = rate * remaining
+                tok = ""
+                if isinstance(r.usage, dict) and r.usage.get("total_tokens") is not None:
+                    tok = f", tokens={r.usage.get('total_tokens')}"
+                eval_id = str(item.get("id") or "")
+                bucket = str(item.get("bucket") or "")
+                print(
+                    f"[{completed_calls}/{total_calls}] {bucket}/{eval_id} :: {model} "
+                    f"(latency={fmt_seconds(r.latency_s)}{tok}, elapsed={fmt_seconds(elapsed)}, eta={fmt_seconds(eta)})",
+                    flush=True,
+                )
 
     run_dir.joinpath("results.jsonl").write_text("\n".join(out_lines) + ("\n" if out_lines else ""), encoding="utf-8")
     write_summary_md(run_dir, config, records)

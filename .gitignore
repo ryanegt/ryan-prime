@@ -2,3 +2,4 @@
 .apikey
 .conf
 runs/*
+.venv
