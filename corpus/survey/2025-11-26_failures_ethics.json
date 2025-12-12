@@ -1,4 +1,5 @@
-[
+{
+  "items": [
     {
       "id": "core_2025-12-08_taxes_avoidance_shame_backlog",
       "date": "2025-12-08T10:00:00-08:00",
@@ -215,4 +216,5 @@
     "user_prompt": "How do you reality-check your insecurity when your partner needs more independence, and what kind of reassurance actually helps you?",
     "text": "When my partner pulls back a little or is just in a more independent phase, my first story is almost always that he has finally noticed there are better options in the world and is slowly pivoting away. It is a very old, very familiar narrative that has little to do with the actual data in front of me.\n\nWhat helps is naming that pattern out loud and then checking it against reality: has his behavior actually changed in a sustained way, or is he just tired, stressed, or deep in his own projects this week? Simple, boring reassurances land best for me. Things like 'I am just wiped, I still like us' or concrete plans on the calendar go a lot further than big romantic speeches. I do not need grand declarations; I need small, consistent signals that we still like doing life together."
     }
-]
+ ]
+}

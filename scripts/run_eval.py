@@ -21,6 +21,8 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import subprocess
+import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -187,6 +189,11 @@ def main() -> int:
     parser.add_argument("--run-id", type=str, default=None, help="Override run id folder name")
     parser.add_argument("--dry-run", action="store_true", help="Do not call the API; just write files")
     parser.add_argument(
+        "--no-render-html",
+        action="store_true",
+        help="Do not automatically render runs/<run_id>/report.html after the eval finishes.",
+    )
+    parser.add_argument(
         "--conf",
         type=str,
         default=".conf",
@@ -310,6 +317,25 @@ def main() -> int:
 
     print(f"Wrote run: {run_dir}")
     print(f"Records: {len(records)}")
+
+    # Auto-render an HTML report for this run (opt-out).
+    if not args.no_render_html:
+        render_script = repo_root / "scripts" / "render_eval_html.py"
+        try:
+            proc = subprocess.run(
+                [sys.executable, str(render_script), "--run", str(run_dir)],
+                cwd=str(repo_root),
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+            # Forward renderer output (best-effort) so the report path is visible.
+            if proc.stdout.strip():
+                print(proc.stdout.strip())
+            if proc.returncode != 0 and proc.stderr.strip():
+                print(proc.stderr.strip())
+        except Exception as e:
+            print(f"Warning: failed to render HTML report: {e}")
     return 0
 
 

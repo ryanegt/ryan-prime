@@ -9,7 +9,7 @@ Input (per run):
 Output (per run):
   - runs/<run_id>/report.html
 
-Optionally generate an index:
+Optionally generate an index (opt-in):
   - runs/index.html
 """
 
@@ -503,8 +503,13 @@ def generate_index(runs_dir: Path, run_reports: List[Tuple[str, str, Optional[st
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run", type=str, default=None, help="Path to a single run dir (e.g. runs/eval_...Z)")
-    parser.add_argument("--runs", type=str, default=None, help="Path to runs dir (e.g. runs/) to render all runs + index")
+    parser.add_argument("--runs", type=str, default=None, help="Path to runs dir (e.g. runs/) to render all runs")
     parser.add_argument("--out-name", type=str, default="report.html", help="Report filename within run dir")
+    parser.add_argument(
+        "--write-index",
+        action="store_true",
+        help="If set (and --runs is used), also write runs/index.html linking to each run report.",
+    )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parents[1]
@@ -541,9 +546,10 @@ def main() -> int:
                 models_str = " vs ".join([str(x) for x in models if str(x)])
         run_reports.append((rd.name, report_rel, models_str))
 
-    idx = generate_index(runs_dir, run_reports)
-    print(f"Wrote: {idx}")
     print(f"Rendered runs: {len(run_reports)}")
+    if args.write_index:
+        idx = generate_index(runs_dir, run_reports)
+        print(f"Wrote: {idx}")
     return 0
 
 

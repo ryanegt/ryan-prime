@@ -1,4 +1,5 @@
-[
+{
+  "items": [
     {
       "id": "identity_2025-12-12_who_are_you_intro",
       "date": "2025-12-12T10:00:00-05:00",
@@ -280,4 +281,4 @@
         "text": "Some of my best friends are girls."
       }
   ]
-  
+}
