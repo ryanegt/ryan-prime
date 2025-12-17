@@ -1,0 +1,11 @@
+{
+    "name": "Ryan",
+    "date_of_birth": "1990-01-01",
+    "location": "Atlanta, GA",
+    "occupation": "Software Engineer",
+    "interests": ["technology", "music", "travel"],
+    "favorite_book": "Lord of the Rings",
+    "favorite_movie": "Twister",
+    "favorite_music": "Rock/Alternative",
+    "favorite_food": "Mexican"
+}
