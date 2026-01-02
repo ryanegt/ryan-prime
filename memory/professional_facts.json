@@ -1,0 +1,274 @@
+{
+  "items": [
+    {
+      "id": "memory_0100_linkedin_summary",
+      "kind": "profile_summary",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {
+        "level": "internal",
+        "notes": "Professional profile content derived from LinkedIn."
+      },
+      "salience": {
+        "importance": 0.85,
+        "stability": 0.9,
+        "recency_weight": 0.4
+      },
+      "topic": ["identity", "work", "engineering", "product"],
+      "title": "LinkedIn profile summary (roles + themes)",
+      "keywords": [
+        "linkedin",
+        "senior architect",
+        "core ai",
+        "product engineering",
+        "aerospace",
+        "autonomous aircraft",
+        "agent frameworks",
+        "llm",
+        "vector databases",
+        "microservices",
+        "rest api",
+        "atlanta"
+      ],
+      "embedding_text": "Professional summary: Senior architect / product-engineering leader spanning AI agent platforms and aerospace operations software. Based in the Atlanta, Georgia area (remote-capable). Themes: building full-stack systems end-to-end; architecting model-agent loops; retrieval + context management; integrating LLMs and vector databases; delivering production software under high-stakes constraints (safety, certification, regulatory frameworks)."
+    },
+
+    {
+      "id": "memory_0101_linkedin_magic_data_senior_architect_core_ai",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.9, "stability": 0.85, "recency_weight": 0.9},
+      "topic": ["work", "ai", "agents", "data"],
+      "title": "Magic Data — Senior Architect, Core AI (Sep 2022–Present)",
+      "keywords": [
+        "magic data",
+        "senior architect",
+        "core ai",
+        "agent loop",
+        "foundation models",
+        "data pipelines",
+        "natural language",
+        "code generation",
+        "embedded code editor",
+        "retrieval",
+        "chroma",
+        "mongodb",
+        "llm",
+        "vector databases"
+      ],
+      "embedding_text": "Work experience: Magic Data — Senior Architect, Core AI (part-time), Sep 2022–Present, Atlanta GA (remote). Leads development of an AI-driven platform that helps users become instant experts on their own data. System uses foundation models to generate, execute, and iterate on custom data pipelines from natural language prompts. Focus: architecture + implementation of the core model-agent loop so users can describe data objectives conversationally and receive working, executable code in real time. Works across the agent framework stack: prompt-based behavior design, context/retrieval management (Chroma + MongoDB), LLM integration, and responses that can be debugged/refined in an embedded code editor."
+    },
+
+    {
+      "id": "memory_0102_linkedin_wisk_lead_product_engineer",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.9, "stability": 0.9, "recency_weight": 0.8},
+      "topic": ["work", "aerospace", "product", "operations"],
+      "title": "Wisk — Lead Product Engineer (Oct 2019–Present)",
+      "keywords": [
+        "wisk",
+        "lead product engineer",
+        "autonomous aircraft",
+        "air carrier operations",
+        "fleet management",
+        "maintenance",
+        "dispatch",
+        "vertiport automation",
+        "do-178",
+        "avionics verification",
+        "microservices",
+        "rest api",
+        "certification",
+        "airworthiness",
+        "regulatory"
+      ],
+      "embedding_text": "Work experience: Wisk — Lead Product Engineer, Oct 2019–Present, Greater Atlanta Area. Leads development + integration of software platforms powering air carrier operations for a certified autonomous passenger aircraft program. Oversees cross-functional delivery across fleet management, maintenance, crew proficiency, dispatching, and vertiport automation; aligns operational + certification objectives with business outcomes. Started in avionics verification (DO-178) then moved into operational software. Current focus: integrating complex microservices and platforms via RESTful APIs to support rapid iteration amid evolving aircraft capabilities and regulatory frameworks. Collaborates with systems engineering, airworthiness/ops certification teams, and product leadership."
+    },
+
+    {
+      "id": "memory_0103_linkedin_stackfolio_senior_software_engineer",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.7, "stability": 0.9, "recency_weight": 0.3},
+      "topic": ["work", "fintech", "marketplace", "backend"],
+      "title": "Stackfolio — Senior Software Engineer (Jun 2018–Oct 2019)",
+      "keywords": [
+        "stackfolio",
+        "banking",
+        "whole loan trading",
+        "debt trading",
+        "asset trading",
+        "marketplace",
+        "python",
+        "django",
+        "mongodb",
+        "gcp",
+        "architecture",
+        "infrastructure"
+      ],
+      "embedding_text": "Work experience: Stackfolio (acquired by $JKHY) — Senior Software Engineer, Jun 2018–Oct 2019, Greater Atlanta Area. Product development, architecture, and infrastructure management for a marketplace + trade tool for banking/institutional whole loan, debt, and asset trading. Supported full-stack product technologies including Python, Django, MongoDB, and Google Cloud Platform."
+    },
+
+    {
+      "id": "memory_0104_linkedin_fix_health_software_architect",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.65, "stability": 0.9, "recency_weight": 0.2},
+      "topic": ["work", "saas", "architecture"],
+      "title": "FIX Health — Software Architect (Dec 2015–Jan 2018)",
+      "keywords": [
+        "fix health",
+        "fitness interactive experience",
+        "software architect",
+        "saas",
+        "restful",
+        "transactional database schema",
+        "infrastructure",
+        "corporate strategy"
+      ],
+      "embedding_text": "Work experience: FIX : Fitness Interactive Experience — Software Architect, Dec 2015–Jan 2018, Greater Atlanta Area. Planned and implemented infrastructure, personnel, web-based SaaS development, and corporate strategy for a gaming + corporate wellness platform. Built and maintained platforms, implemented RESTful architecture, and optimized transactional database schemas."
+    },
+
+    {
+      "id": "memory_0105_linkedin_imagineair_cto_head_of_product",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.85, "stability": 0.95, "recency_weight": 0.15},
+      "topic": ["work", "aviation", "product", "operations"],
+      "title": "ImagineAir — CTO, Head of Product (Nov 2009–Jan 2018)",
+      "keywords": [
+        "imagineair",
+        "cto",
+        "head of product",
+        "part 135",
+        "air taxi",
+        "cirrus",
+        "scheduling automation",
+        "route optimization",
+        "empty leg",
+        "reservation system",
+        "fleet management",
+        "maintenance workflows",
+        "crew proficiency",
+        "revenue yield",
+        "inventory consolidation"
+      ],
+      "embedding_text": "Work experience: ImagineAir — CTO, Head of Product, Nov 2009–Jan 2018, Greater Atlanta Area (on-site). Led technology + product strategy for a Cirrus-based Part 135 air taxi operator. Designed and delivered scheduling automation + route optimization to solve the empty-leg inefficiency problem; built an automated, airline-style point-of-sale reservation system for on-demand flights. Evolved software for maintenance workflows, crew proficiency tracking, fleet management, and flight operations—reducing costs and scaling operations from 3 aircraft and ~$500K annual revenue to 18+ aircraft and $10M+ annually. Licensed reservation, revenue-yield, and fleet-management software to other operators/booking agencies; helped establish Sabre-like inventory consolidation for Part 135."
+    },
+
+    {
+      "id": "memory_0106_linkedin_creative_circus_instructor",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.55, "stability": 0.9, "recency_weight": 0.1},
+      "topic": ["work", "teaching", "software"],
+      "title": "The Creative Circus — Software Engineering Course Instructor (Jul 2015–2018)",
+      "keywords": [
+        "creative circus",
+        "instructor",
+        "teaching",
+        "react",
+        "php",
+        "full stack",
+        "web development"
+      ],
+      "embedding_text": "Work experience: The Creative Circus — Software Engineering Course Instructor, Jul 2015–2018, Greater Atlanta Area. Taught students front-end and back-end application development (including ReactJS and PHP) plus a wide range of web coding languages, practices, frameworks, and core concepts."
+    },
+
+    {
+      "id": "memory_0107_linkedin_nfl_network_full_stack_developer",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.5, "stability": 0.95, "recency_weight": 0.05},
+      "topic": ["work", "web", "broadcast"],
+      "title": "NFL Network — Full Stack Developer (2013–2014)",
+      "keywords": [
+        "nfl network",
+        "full stack",
+        "affiliate portal",
+        "lamp",
+        "cms",
+        "hardware tracking",
+        "blackout management"
+      ],
+      "embedding_text": "Work experience: NFL Network — Full Stack Developer, 2013–2014, Greater Atlanta Area. Developed a standalone network affiliate portal (LAMP-based) enabling worldwide receiver hardware tracking and NFL Network blackout management."
+    },
+
+    {
+      "id": "memory_0108_linkedin_encompass_digital_media_senior_product_engineer",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.6, "stability": 0.95, "recency_weight": 0.0},
+      "topic": ["work", "broadcast", "cms"],
+      "title": "Encompass Digital Media — Senior Product Engineer (Sep 2001–Nov 2010)",
+      "keywords": [
+        "encompass digital media",
+        "senior product engineer",
+        "broadcast",
+        "cms",
+        "cloud software",
+        "streaming media",
+        "microsoft",
+        "open source",
+        "nbc",
+        "discovery",
+        "3rd army public affairs"
+      ],
+      "embedding_text": "Work experience: Encompass Digital Media, Inc. — Senior Product Engineer, Sep 2001–Nov 2010. Built web-based tools for broadcast network management, interfacing with Microsoft and open-source products and streaming media platforms. Lead developer on CMS projects including standalone cloud software systems for 3rd Army Public Affairs, NBC Universal Central Casting, Discovery Channel/Networks, and the NFL Network."
+    },
+
+    {
+      "id": "memory_0109_linkedin_yellow_jacket_flying_club_ceo_cfo",
+      "kind": "work_experience",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.45, "stability": 0.95, "recency_weight": 0.0},
+      "topic": ["work", "aviation", "operations"],
+      "title": "Yellow Jacket Flying Club — CEO/CFO (Mar 2008–Mar 2010)",
+      "keywords": [
+        "yellow jacket flying club",
+        "ceo",
+        "cfo",
+        "operations",
+        "finance",
+        "management",
+        "georgia tech",
+        "flying club"
+      ],
+      "embedding_text": "Work experience: Yellow Jacket Flying Club — CEO/CFO, Mar 2008–Mar 2010. Managed operations, finance, and overall management of Yellow Jacket Flying Club Inc. at Georgia Tech."
+    },
+
+    {
+      "id": "memory_0110_linkedin_skills",
+      "kind": "skills",
+      "created_at": "2025-12-17T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.75, "stability": 0.9, "recency_weight": 0.6},
+      "topic": ["skills", "work"],
+      "title": "LinkedIn skills (selected)",
+      "keywords": [
+        "large language models",
+        "llm",
+        "vector databases",
+        "artificial intelligence",
+        "ai",
+        "data analysis",
+        "data architecture",
+        "lamp",
+        "agile",
+        "product development",
+        "node.js",
+        "instrument rated pilot"
+      ],
+      "embedding_text": "Selected LinkedIn skills: Large Language Models (LLM), Vector Databases, Artificial Intelligence (AI), Data Analysis, Data Architecture, LAMP, Agile Methodologies, Product Development, Node.js, Instrument Rated Pilot."
+    }
+  ]
+}

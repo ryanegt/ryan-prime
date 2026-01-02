@@ -3,9 +3,13 @@
     "date_of_birth": "1990-01-01",
     "location": "Atlanta, GA",
     "occupation": "Software Engineer",
+    "parents": ["Don", "Stephanie"],
+    "siblings": ["Brandon", "Nathan"],
     "interests": ["technology", "music", "travel"],
     "favorite_book": "Lord of the Rings",
     "favorite_movie": "Twister",
     "favorite_music": "Rock/Alternative",
-    "favorite_food": "Mexican"
+    "favorite_food": "Mexican",
+    "partner": "Dakota",
+    "pets": ["Tucker"]
 }

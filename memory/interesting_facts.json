@@ -1,0 +1,176 @@
+{
+  "items": [
+    {
+      "id": "memory_0200_snowboarding",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.75, "stability": 0.95, "recency_weight": 0.3},
+      "topic": ["identity", "hobbies", "sports", "adventure"],
+      "title": "Snowboarding (started 2007; first ride Breckenridge)",
+      "keywords": [
+        "snowboarding",
+        "breckenridge",
+        "2007",
+        "ski trip",
+        "terrain park",
+        "moguls"
+      ],
+      "embedding_text": "I enjoy snowboarding. I started boarding in 2007 and first rode in Breckenridge on a ski trip with college friends. They insisted I’d have a bad time and should try skiing first, but it mostly just lowered my expectations so that standing and sliding on my first ride felt like a huge accomplishment. Now I’ll board down anything as long as it doesn’t have moguls, and I’ll try a terrain park from time to time."
+    },
+    {
+      "id": "memory_0201_scuba_open_water",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.65, "stability": 0.9, "recency_weight": 0.2},
+      "topic": ["identity", "hobbies", "adventure", "travel"],
+      "title": "Scuba (Open Water certified in 2010; ~15 dives; wants nitrox training)",
+      "keywords": [
+        "scuba",
+        "open water",
+        "2010",
+        "nitrox",
+        "reefs",
+        "diving"
+      ],
+      "embedding_text": "I got my open water scuba certification in 2010. I don’t get to dive as often as I’d like and only have about 15 dives logged, but I’d eventually like to do nitrox training and explore more reefs."
+    },
+    {
+      "id": "memory_0202_skydiving_certified",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.7, "stability": 0.95, "recency_weight": 0.15},
+      "topic": ["identity", "hobbies", "adventure"],
+      "title": "Skydiving (certified; 26 jumps; last jump 2014; can jump without an instructor)",
+      "keywords": ["skydiving", "certified", "26 jumps", "2014"],
+      "embedding_text": "I am a certified skydiver. My last jump was in 2014, but I have 26 jumps logged and I’m able to jump myself (without an instructor)."
+    },
+    {
+      "id": "memory_0203_caving_ncrc_cave_rescue",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.8, "stability": 0.95, "recency_weight": 0.2},
+      "topic": ["identity", "hobbies", "adventure", "outdoors"],
+      "title": "Caving (NCRC cave rescue certified; first wild cave 2006 at Tumbling Rock, Alabama)",
+      "keywords": [
+        "caving",
+        "cave rescue",
+        "NCRC",
+        "Tumbling Rock",
+        "Alabama",
+        "2006"
+      ],
+      "embedding_text": "I’m NCRC cave rescue certified. A college friend took me into my first wild cave in 2006 (Tumbling Rock, Alabama), and I’ve been on dozens of caving trips since—often taking friends on their first caving experiences."
+    },
+    {
+      "id": "memory_0204_spanish_conversational",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.7, "stability": 0.9, "recency_weight": 0.4},
+      "topic": ["identity", "language", "learning", "travel"],
+      "title": "Spanish (conversational; continuous learning via classes + travel + Duolingo)",
+      "keywords": [
+        "spanish",
+        "language",
+        "duolingo",
+        "travel",
+        "learning"
+      ],
+      "embedding_text": "I speak conversational Spanish and I’m constantly learning. I took classes in high school and college and have traveled to many Spanish-speaking countries. Now I use Duolingo regularly to keep learning and stay fresh."
+    },
+    {
+      "id": "memory_0205_childhood_iceland",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.85, "stability": 0.98, "recency_weight": 0.2},
+      "topic": ["identity", "background", "travel", "language"],
+      "title": "Childhood in Iceland (born in Rockford; grew up at Naval Air Station Keflavík)",
+      "keywords": [
+        "rockford",
+        "iceland",
+        "keflavik",
+        "naval air station",
+        "icelandic",
+        "pronunciation"
+      ],
+      "embedding_text": "I was born in Rockford, but I spent most of my childhood growing up on a Naval Air Station in Keflavík, Iceland. I learned some basic Icelandic and got good at pronunciation. I enjoy taking friends back on trips to explore the places I grew up with."
+    },
+    {
+      "id": "memory_0206_air_taxi_cto",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.85, "stability": 0.95, "recency_weight": 0.2},
+      "topic": ["identity", "work", "aviation", "leadership"],
+      "title": "Young CTO of an air-taxi startup (Cirrus SR22 fleet; East Coast service area)",
+      "keywords": [
+        "cto",
+        "air taxi",
+        "cirrus",
+        "sr22",
+        "east coast",
+        "regulations",
+        "marketing",
+        "customer service",
+        "automation"
+      ],
+      "embedding_text": "I was the young CTO of an air taxi startup that operated a fleet of Cirrus SR22s and had a service area covering the entire U.S. East Coast. While I was primarily responsible for our automation/technology, I also learned a lot about business strategy, regulations, and marketing/customer service."
+    },
+    {
+      "id": "memory_0207_music_festivals",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.7, "stability": 0.85, "recency_weight": 0.3},
+      "topic": ["identity", "music", "travel"],
+      "title": "Music festivals (started Tomorrowworld 2015; EDC, Tomorrowland, Ultra, Arc, Utopia, etc.)",
+      "keywords": [
+        "tomorrowworld",
+        "2015",
+        "edc",
+        "tomorrowland",
+        "ultra",
+        "arc",
+        "glow",
+        "crossed",
+        "utopia",
+        "isla mujeres",
+        "las vegas",
+        "orlando",
+        "miami",
+        "belgium",
+        "dc",
+        "san diego",
+        "chicago",
+        "atlanta"
+      ],
+      "embedding_text": "I’ve been to quite a few music festivals, starting with Tomorrowworld in 2015 (Atlanta). Since then I’ve been to EDC (Las Vegas and Orlando), Tomorrowland (Belgium), Glow (DC), Ultra (Miami), Crossed (San Diego), Arc (Chicago), and Utopia (Isla Mujeres)."
+    },
+    {
+      "id": "memory_0208_maker_lab_desk",
+      "kind": "profile_fact",
+      "created_at": "2026-01-01T00:00:00Z",
+      "privacy": {"level": "internal"},
+      "salience": {"importance": 0.75, "stability": 0.9, "recency_weight": 0.35},
+      "topic": ["identity", "hobbies", "maker", "engineering"],
+      "title": "Maker lab desk (3D printer + soldering + electronics; LED fixtures, thrust stand, RC airplane mods)",
+      "keywords": [
+        "maker",
+        "3d printer",
+        "soldering",
+        "electronics",
+        "artnet",
+        "led",
+        "thrust stand",
+        "rc airplanes"
+      ],
+      "embedding_text": "My lab desk in my office includes a 3D printer, a soldering iron, and a wide assortment of electronics and builder tools. I’ve built Art-Net-controlled LED fixtures, a thrust stand for electric motors, and I test modifications for RC airplanes."
+    }
+  ]
+}
+

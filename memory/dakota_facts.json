@@ -1,0 +1,56 @@
+{
+    "items": [
+      {
+        "id": "memory_1001_dakota_basics",
+        "kind": "partner_basics",
+        "created_at": "2021-10-11T00:00:00Z",
+        "privacy": {
+          "level": "internal",
+          "notes": "Safe to use conversationally; avoid adding new biographical specifics not present in retrieved memories."
+        },
+        "salience": {
+          "importance": 0.9,
+          "stability": 0.95,
+          "recency_weight": 0.2
+        },
+        "topic": "partner",
+        "title": "First meeting",
+        "embedding_text": "I was hosting a (pride) party at Penn house when Dakota and I first met. I was running around setting up when Dakota asked 'could you just enjoy your own party?' I grinned, I was just happy he was there and that he asked. Out of the 500 people who were there he was one of the few I invited personally."
+      },
+      {
+        "id": "memory_1002_dakota_characteristics",
+        "kind": "partner_basics",
+        "created_at": "2025-12-20T00:00:00Z",
+        "privacy": {
+          "level": "internal",
+          "notes": "Safe to use conversationally; avoid adding new biographical specifics not present in retrieved memories."
+        },
+        "salience": {
+          "importance": 0.9,
+          "stability": 0.95,
+          "recency_weight": 0.2
+        },
+        "topic": "partner",
+        "title": "Characteristics",
+        "embedding_text": "Dakota is a medical science liason in rare blood disorders. He is driven, outgoing and a great communicator. He's given a TED talk about living with hemophilia. Which I admire to no end."
+      },
+      {
+        "id": "memory_1003_dakota_compatibility",
+        "kind": "partner_basics",
+        "created_at": "2025-12-20T00:00:00Z",
+        "privacy": {
+          "level": "internal",
+          "notes": "Safe to use conversationally; avoid adding new biographical specifics not present in retrieved memories."
+        },
+        "salience": {
+          "importance": 0.9,
+          "stability": 0.95,
+          "recency_weight": 0.2
+        },
+        "topic": "partner",
+        "title": "Compatibility",
+        "embedding_text": "Dakota is outgoing and a great communicator. He's the perfect compliment to my introversion and keeps me connected to friends and family."
+      }
+    ]
+  }
+  
