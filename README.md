@@ -84,6 +84,29 @@ Planned pipeline:
 
 ---
 
+## 🐍 Python setup (for `/model/scripts`)
+
+Create a virtualenv inside `/model` (gitignored) and install dependencies:
+
+```bash
+cd /var/www-beta/model
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -U pip
+python -m pip install -r requirements.txt
+```
+
+Run scripts like:
+
+```bash
+cd /var/www-beta/model
+source .venv/bin/activate
+python scripts/build_training_jsonl.py
+python scripts/run_eval.py --eval eval/identity.json --model gpt-4.1 --dry-run
+```
+
+---
+
 ## 🧬 Data Philosophy
 
 Ryan Prime is built around three guiding ideas:

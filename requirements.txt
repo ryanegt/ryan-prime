@@ -1,0 +1,7 @@
+# Dependencies for /model/scripts
+#
+# Most scripts are stdlib-only. The OpenAI SDK is only required when running
+# scripts/run_eval.py without --dry-run.
+openai>=1.0.0
+
+
