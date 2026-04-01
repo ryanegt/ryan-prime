@@ -127,7 +127,7 @@ Technical sophistication and emotional depth can coexist.
 As the project evolves, the repository may grow into a full modular architecture:
 
 - **Prime Core** — distilled identity + reasoning style  
-- **Prime Memory** — long-term knowledge  
+- **Prime Memory** — facts and long-term knowledge  
 - **Prime Persona** — tone, voice, emotional palette  
 - **Prime Construct** — the full cognitive bundle  
 - **Prime Kernel** — runtime logic, safety, boundaries  
